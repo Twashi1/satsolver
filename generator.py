@@ -90,8 +90,8 @@ sys.path.append("secret/")
 import implementation
 
 generate(
-    "tests/cooltest.txt",
-    generateConfigs(30, (2, 2), (2, 7)),    # n cases, with a-b variables and c-d clauses
+    "tests/10k4v16c.txt",
+    generateConfigs(10_000, (4, 4), (16, 16)),    # n cases, with a-b variables and c-d clauses
     implementation.simple_sat_solve,        # your sat solve function, e.g. impementation.dpll_sat_solve
     DEFAULT_LITERAL_PRESENCE_WEIGHT,
     True                                    # turn off unless using simple sat solve
