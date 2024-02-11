@@ -1,7 +1,6 @@
 # GO BOTTOM
 
 # TODO: tester for unit propogation
-# TODO: generate test cases
 
 def readExtendedDIMACS(file):
     with open(file, 'r') as f:
@@ -14,7 +13,7 @@ def readExtendedDIMACS(file):
 
         for i, header in enumerate(headers):
             line = lines[header]
-            nextHeader = -1 if i + 1 >= len(headers) else headers[i + 1]
+            nextHeader = None if i + 1 >= len(headers) else headers[i + 1]
 
             _, name, satisfiability = line.split(" ")
             tests.append((name, satisfiability[:-1] in ('satisfiable', 'good'), lines[header + 1:nextHeader]))
@@ -62,23 +61,28 @@ def testExtended(filename, sat_solve, dimacs_loader, is_simple_sat_solver):
     passed = 0
 
     for test in tests:
-        result = testSolve(test, sat_solve, dimacs_loader)
-        passed += 1
+        result = testSolve(test, sat_solve, dimacs_loader, is_simple_sat_solver)
+        if result: passed += 1
 
     print(f"Finished {len(tests)}")
     print(f"{passed}/{len(tests)}, {(passed/len(tests)) * 100:.3f}%")
 
 ### FILL IN DETAILS HERE
 
+# ignore this    
+import sys
+sys.path.append("secret/")
+import implementation
+
 # name of the test file to read, expecting "extended" dimacs format
 # basically each test is separated by # testName [un]satisfiable e.g. "tests/simple.txt"
 testName = "tests/simple.txt"
 # function to load dimacs file, expecting just to take a filename
-dimacs_loader = None
+dimacs_loader = implementation.load_dimacs
 # function to SAT-solve, expecting to take a clause set and a partial assignment
-sat_solver = None
+sat_solver = implementation.simple_sat_solve
 # if you're testing your simple sat solver, set this to true so a partial assignment is not required
-is_simple_sat_solver = False
+is_simple_sat_solver = True
 
 if sat_solver is not None:
     testExtended(testName, sat_solver, dimacs_loader, is_simple_sat_solver)
