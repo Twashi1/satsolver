@@ -1,5 +1,8 @@
 # GO BOTTOM
 
+# TODO: tester for unit propogation
+# TODO: generate test cases
+
 def readExtendedDIMACS(file):
     with open(file, 'r') as f:
         lines = f.readlines()
