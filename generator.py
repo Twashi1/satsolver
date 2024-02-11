@@ -74,8 +74,6 @@ def generate(filename, configs, sat_solver, literal_presence_weight = DEFAULT_LI
             # format it
             s = f"# {i + 1} {word}\n{dimacs(clause_set)}\n"
 
-            print(s)
-
             f.write(s)
 
 # both intervals inclusive
@@ -93,7 +91,7 @@ import implementation
 
 generate(
     "tests/cooltest.txt",
-    generateConfigs(10, (3, 3), (1, 2)),    # n cases, with a-b variables and c-d clauses
+    generateConfigs(30, (2, 2), (2, 7)),    # n cases, with a-b variables and c-d clauses
     implementation.simple_sat_solve,        # your sat solve function, e.g. impementation.dpll_sat_solve
     DEFAULT_LITERAL_PRESENCE_WEIGHT,
     True                                    # turn off unless using simple sat solve

@@ -79,13 +79,13 @@ import implementation
 
 # name of the test file to read, expecting "extended" dimacs format
 # basically each test is separated by # testName [un]satisfiable e.g. "tests/simple.txt"
-testName = "tests/simple.txt"
+testName = "tests/cooltest.txt"
 # function to load dimacs file, expecting just to take a filename
 dimacs_loader = implementation.load_dimacs
 # function to SAT-solve, expecting to take a clause set and a partial assignment
-sat_solver = implementation.simple_sat_solve
+sat_solver = implementation.branching_sat_solve
 # if you're testing your simple sat solver, set this to true so a partial assignment is not required
-is_simple_sat_solver = True
+is_simple_sat_solver = False
 
 if sat_solver is not None:
     testExtended(testName, sat_solver, dimacs_loader, is_simple_sat_solver)

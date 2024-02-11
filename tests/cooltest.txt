@@ -1,44 +1,218 @@
-# 1 satisfiable
-p cnf 3 1
-1 -2 -3 0
+# 1 unsatisfiable
+p cnf 1 2
+-2 0
+2 0
 
-# 2 satisfiable
-p cnf 3 1
-1 2 3 0
+# 2 unsatisfiable
+p cnf 2 7
+1 2 0
+-1 2 0
+1 2 0
+-1 2 0
+-1 2 0
+-1 0
+1 -2 0
 
-# 3 satisfiable
-p cnf 3 2
-1 -2 3 0
-1 2 3 0
+# 3 unsatisfiable
+p cnf 2 6
+-1 2 0
+1 2 0
+1 -2 0
+-2 0
+-1 0
+-1 0
 
-# 4 satisfiable
-p cnf 3 2
--1 -2 -3 0
-1 2 -3 0
+# 4 unsatisfiable
+p cnf 2 5
+-1 -2 0
+2 0
+1 2 0
+1 -2 0
+2 0
 
 # 5 satisfiable
-p cnf 3 2
--1 2 -3 0
--3 0
+p cnf 2 2
+1 -2 0
+-1 0
 
-# 6 satisfiable
-p cnf 2 1
-1 -3 0
+# 6 unsatisfiable
+p cnf 2 5
+1 0
+-1 -2 0
+2 0
+-1 -2 0
+-1 -2 0
 
 # 7 satisfiable
-p cnf 2 1
--2 -3 0
+p cnf 2 3
+1 -2 0
+-1 -2 0
+-1 2 0
 
 # 8 satisfiable
-p cnf 3 2
--1 -2 3 0
-2 3 0
+p cnf 2 7
+-1 2 0
+1 -2 0
+-1 2 0
+-1 0
+-2 0
+-1 -2 0
+1 -2 0
 
 # 9 satisfiable
-p cnf 2 1
--1 -3 0
+p cnf 2 4
+1 -2 0
+1 -2 0
+-1 2 0
+-1 -2 0
 
-# 10 satisfiable
-p cnf 3 1
-1 -2 3 0
+# 10 unsatisfiable
+p cnf 2 4
+1 0
+-1 2 0
+1 -2 0
+-1 -2 0
+
+# 11 satisfiable
+p cnf 2 5
+-1 -2 0
+-1 0
+-1 2 0
+1 2 0
+-1 0
+
+# 12 satisfiable
+p cnf 2 2
+1 -2 0
+-1 -2 0
+
+# 13 unsatisfiable
+p cnf 1 3
+-1 0
+-1 0
+1 0
+
+# 14 satisfiable
+p cnf 2 4
+-1 -2 0
+-1 -2 0
+1 -2 0
+1 -2 0
+
+# 15 satisfiable
+p cnf 2 5
+2 0
+2 0
+-1 -2 0
+1 2 0
+1 2 0
+
+# 16 satisfiable
+p cnf 2 7
+-1 -2 0
+1 2 0
+1 2 0
+-1 2 0
+-1 2 0
+2 0
+-1 0
+
+# 17 unsatisfiable
+p cnf 2 5
+-2 0
+1 0
+-1 -2 0
+-2 0
+-1 0
+
+# 18 satisfiable
+p cnf 2 3
+-1 -2 0
+1 2 0
+-2 0
+
+# 19 unsatisfiable
+p cnf 2 7
+1 -2 0
+2 0
+2 0
+-1 -2 0
+1 -2 0
+-1 2 0
+1 -2 0
+
+# 20 satisfiable
+p cnf 2 4
+1 -2 0
+-1 2 0
+1 -2 0
+1 -2 0
+
+# 21 satisfiable
+p cnf 2 4
+1 2 0
+-1 -2 0
+1 -2 0
+1 -2 0
+
+# 22 unsatisfiable
+p cnf 2 6
+1 -2 0
+-1 -2 0
+-1 2 0
+-1 0
+-1 0
+2 0
+
+# 23 satisfiable
+p cnf 2 2
+-2 0
+1 2 0
+
+# 24 satisfiable
+p cnf 2 3
+-1 2 0
+1 2 0
+1 -2 0
+
+# 25 unsatisfiable
+p cnf 2 5
+2 0
+-1 -2 0
+-1 -2 0
+1 0
+2 0
+
+# 26 unsatisfiable
+p cnf 2 5
+-1 0
+-2 0
+-1 -2 0
+1 2 0
+-1 0
+
+# 27 satisfiable
+p cnf 2 4
+-1 -2 0
+1 -2 0
+-1 -2 0
+1 -2 0
+
+# 28 satisfiable
+p cnf 2 3
+1 -2 0
+-2 0
+-2 0
+
+# 29 satisfiable
+p cnf 2 2
+2 0
+-1 -2 0
+
+# 30 satisfiable
+p cnf 2 4
+1 0
+1 -2 0
+-1 2 0
+1 2 0
 
