@@ -23,7 +23,7 @@ def readExtendedDIMACS(file):
 def writeTest(test, filename):
     with open(filename, 'wt+') as f:
         for line in test[2]:
-            if len(line) <= 1:
+            if len(line) <= 1 or line.startswith("c"):
                 continue
 
             f.write(line)
