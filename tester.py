@@ -23,6 +23,9 @@ def readExtendedDIMACS(file):
 def writeTest(test, filename):
     with open(filename, 'wt+') as f:
         for line in test[2]:
+            if len(line) <= 1:
+                continue
+
             f.write(line)
     
 def testSolve(test, sat_solve, dimacs_loader, is_simple_sat_solver):
