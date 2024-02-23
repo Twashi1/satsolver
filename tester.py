@@ -1,6 +1,4 @@
-# GO BOTTOM
-
-# TODO: tester for unit propogation
+# GO BOTTOM FOR OPTIONS
 
 def readExtendedDIMACS(file):
     with open(file, 'r') as f:
@@ -16,7 +14,7 @@ def readExtendedDIMACS(file):
             nextHeader = None if i + 1 >= len(headers) else headers[i + 1]
 
             _, name, satisfiability = line.split(" ")
-            tests.append((name, satisfiability[:-1] in ('satisfiable', 'good'), lines[header + 1:nextHeader]))
+            tests.append((name, satisfiability[:-1] in ('satisfiable', 'sat'), lines[header + 1:nextHeader]))
 
         return tests
     
@@ -28,7 +26,7 @@ def writeTest(test, filename):
 
             f.write(line)
     
-def testSolve(test, sat_solve, dimacs_loader, is_simple_sat_solver):
+def testSolve(test, sat_solve, dimacs_loader, is_simple_sat_solver, require_all_literals):
     writeTest(test, "temp.txt")
 
     result = None
@@ -40,8 +38,6 @@ def testSolve(test, sat_solve, dimacs_loader, is_simple_sat_solver):
 
     if result is False:
         if not test[1]:
-            print(f"{test[0]} passed")
-
             return True
 
         print(f"{test[0]} failed, expected satisfiable")
@@ -53,18 +49,26 @@ def testSolve(test, sat_solve, dimacs_loader, is_simple_sat_solver):
 
         return False
     
-    print(f"{test[0]} passed")
+    if require_all_literals:
+        clause_set = dimacs_loader("temp.txt")
+        vars = set()
+
+        for clause in clause_set:
+            for var in clause: vars.add(abs(var))
+
+        if len(vars) != len(result):
+            print(f"Warning: assignment {result} did not contain all literals: {vars}")
 
     return True
 
-# test extended dimacs format
-def testExtended(filename, sat_solve, dimacs_loader, is_simple_sat_solver):
+# Test extended dimacs format
+def testExtended(filename, sat_solve, dimacs_loader, is_simple_sat_solver, require_all_literals):
     tests = readExtendedDIMACS(filename)
 
     passed = 0
 
     for test in tests:
-        result = testSolve(test, sat_solve, dimacs_loader, is_simple_sat_solver)
+        result = testSolve(test, sat_solve, dimacs_loader, is_simple_sat_solver, require_all_literals)
         if result: passed += 1
 
     print(f"Finished {len(tests)}")
@@ -79,15 +83,18 @@ import implementation
 
 # name of the test file to read, expecting "extended" dimacs format
 # basically each test is separated by # testName [un]satisfiable e.g. "tests/simple.txt"
-testName = "tests/cooltest.txt"
+testName = "tests/1k4v16c.txt"
 # function to load dimacs file, expecting just to take a filename
 dimacs_loader = implementation.load_dimacs
 # function to SAT-solve, expecting to take a clause set and a partial assignment
-sat_solver = implementation.branching_sat_solve
+sat_solver = implementation.dpll_sat_solve
 # if you're testing your simple sat solver, set this to true so a partial assignment is not required
 is_simple_sat_solver = False
+# require all literals value to be stated, not just a partial assignment
+# e.g. [[-1, 3], [1, 2]] requires [2, 3, (+-)1] not just [2, 3]
+require_all_literals = True
 
 if sat_solver is not None:
-    testExtended(testName, sat_solver, dimacs_loader, is_simple_sat_solver)
+    testExtended(testName, sat_solver, dimacs_loader, is_simple_sat_solver, require_all_literals)
 else:
     print("Configure in file (import it, and set value of the sat_solver variable)")
