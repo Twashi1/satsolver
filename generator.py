@@ -1,24 +1,31 @@
-### EXAMPLE USAGE AT BOTTOM
+# Configure and run at bottom
+# Some global variables to edit just below
+
 import random
 
 # TODO: this code sucks someone fix it all for me :) (you can put it in learning log for progblock cw no?)
+# TODO: using literal when variable is meant in some places
 
 # Each literal has x chance of being included in a given clause
 # If this is not 1, its possible a literal isn't generated in any clause, thus we get less than the requested minimum
 #   number of variables
-DEFAULT_LITERAL_PRESENCE_WEIGHT = 0.8
+LITERAL_PRESENCE_WEIGHT = 0.8
 # Attempts to generate a clause before we assume that the given arguments do not allow generation of any valid clause
 #   or that valid clauses are too rare
 CLAUSE_GENERATION_ATTEMPT_LIMIT = 100
+# Ensures all variables in range 1->n are generated (where n is variableCount)
+#   Note this does not necessarily mean it will always generate as many variables as specified in the config
+#   especially at low literal presence weights
+NO_MISSING_VARIABLES = False
 
 # Give variable x a random sign
 random_sign = lambda x: x * (random.randint(0, 1) * 2 - 1)
-# Generate literals for a given clause
-gen_literals = lambda count, weight: [random_sign(i + 1) for i in range(count) if random.random() < weight] 
+# Generate a clause with a given number of literals
+generate_clause = lambda count: [random_sign(i + 1) for i in range(count) if random.random() < LITERAL_PRESENCE_WEIGHT] 
 
 # TODO: would be nice if past Thomas told me what was wrong with it
 # TODO: issues with this, generating bad format
-def dimacs(clause_set):    
+def dimacs_string(clause_set):    
     # Count variables
     literals = set()
 
@@ -26,24 +33,13 @@ def dimacs(clause_set):
         for literal in clause:
             literals.add(abs(literal))
 
-    # Missing some variable in every clause, need to
-    #   rename the variables
-    if len(literals) != max(literals):
-        # So we can use index
-        literals = list(literals)
-
-        # TODO: almost definitely an inefficient way of doing this
-        for clause in clause_set:
-            for i, variable in enumerate(clause):
-                clause[i] = ((variable > 0) * 2 - 1) * (literals.index(abs(variable)) + 1)
-
-    variableCount = len(literals)
-    clauseCount = len(clause_set)
+    variable_count = max(literals)
+    clause_count = len(clause_set)
 
     # yikes
-    return f"p cnf {variableCount} {clauseCount}\n" + " 0\n".join([" ".join([str(literal) for literal in clause]) for clause in clause_set]) + " 0\n"
+    return f"p cnf {variable_count} {clause_count}\n" + " 0\n".join([" ".join([str(literal) for literal in clause]) for clause in clause_set]) + " 0\n"
 
-def generateClauseSet(config, literal_presence_weight):
+def generate_clause_set(config):
     variableCount, clauseCount = config
 
     clause_set = []
@@ -51,10 +47,10 @@ def generateClauseSet(config, literal_presence_weight):
     for _ in range(clauseCount):
         attempts = 0
 
-        clause = gen_literals(variableCount, literal_presence_weight)
+        clause = generate_clause(variableCount)
 
         while len(clause) == 0 and attempts < CLAUSE_GENERATION_ATTEMPT_LIMIT:
-            clause = gen_literals(variableCount, literal_presence_weight)
+            clause = generate_clause(variableCount)
 
             attempts += 1
 
@@ -63,18 +59,30 @@ def generateClauseSet(config, literal_presence_weight):
         
         clause_set.append(clause)
 
+    if NO_MISSING_VARIABLES:
+        # Re-assign literals to ensure we fit the range [1, n]
+        # So we can use index
+        literals = list({abs(literal) for clause in clause_set for literal in clause})
+
+        if len(literals) != max(literals):
+            # TODO: almost definitely an inefficient way of doing this
+            for clause in clause_set:
+                for i, variable in enumerate(clause):
+                    clause[i] = ((variable > 0) * 2 - 1) * (literals.index(abs(variable)) + 1)
+
     return clause_set
 
 
 # Requires a WORKING sat solver to label a case as satisfiable or not
-# configs specifies clause count and variable count in the following format:
+# 'configs' specifies clause count and variable count in the following format:
 #   [(variableCount, clauseCount), ...]
 # Will generate duplicate clauses sometimes
-# will not generate empty clauses
-def generate(filename, configs, sat_solver, literal_presence_weight = DEFAULT_LITERAL_PRESENCE_WEIGHT, is_simple_sat_solve = False):
+# Will not generate empty clauses
+# Will not generate two conflicting literals in the same clause (-1, 1, 2)
+def generate(filename, configs, sat_solver, is_simple_sat_solve = False):
     with open(filename, "w+") as f:
         for i, config in enumerate(configs):
-            clause_set = generateClauseSet(config, literal_presence_weight)
+            clause_set = generate_clause_set(config)
 
             is_satisfiable = None
 
@@ -86,27 +94,26 @@ def generate(filename, configs, sat_solver, literal_presence_weight = DEFAULT_LI
             word = 'satisfiable' if is_satisfiable else 'unsatisfiable'
 
             # format it
-            s = f"# {i + 1} {word}\n{dimacs(clause_set)}\n"
+            s = f"# {i + 1} {word}\n{dimacs_string(clause_set)}\n"
 
             f.write(s)
 
 # Both intervals inclusive
-# Not guaranteed to generate the minimum of the variableInterval
-def generateConfigs(count, variableInterval, clauseInterval):
+# Not guaranteed to generate the minimum of the variable_interval
+def generate_configs(count, variable_interval, clause_interval):
     return [
-        (random.randint(*variableInterval), random.randint(*clauseInterval))
+        (random.randint(*variable_interval), random.randint(*clause_interval))
         for _ in range(count)
     ]
 
-# import your own [WORKING] implementation here (and remove these three lines)
+# Import your own [WORKING] implementation here (and remove these three lines)
 import sys
 sys.path.append("secret/")
 import implementation
 
 generate(
     "tests/ntest.txt",
-    generateConfigs(1000, (3, 3), (4, 4)),  # n cases, with a-b variables and c-d clauses
+    generate_configs(1000, (3, 3), (4, 4)),  # n cases, with a-b variables and c-d clauses
     implementation.simple_sat_solve,        # your known working sat-solve function
-    DEFAULT_LITERAL_PRESENCE_WEIGHT,
     True                                    # False unless using simple sat solve
 )

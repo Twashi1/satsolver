@@ -1,11 +1,13 @@
 import generator
+# TODO: rely on this more for general testing code
+import tester
 
-def generate_and_test(configs, working_sat, test_sat, literal_presence_weight=generator.DEFAULT_LITERAL_PRESENCE_WEIGHT, require_all_literals=True, is_simple_sat_solve_work=True, is_simple_sat_solve_test=False):
+def generate_and_test(configs, working_sat, test_sat, is_simple_sat_solve_work=True, is_simple_sat_solve_test=False):
     passed_cases = 0
     failed_cases = []
     
     for i, config in enumerate(configs):
-        clause_set = generator.generateClauseSet(config, literal_presence_weight)
+        clause_set = generator.generate_clause_set(config)
 
         satisfiability = None
 
@@ -30,23 +32,20 @@ def generate_and_test(configs, working_sat, test_sat, literal_presence_weight=ge
                 print(f"Test index {i} failed, {result} is not a satisfying truth assignment")
                 failed_cases.append((clause_set, satisfiability))
         
-        if require_all_literals and result is not False and satisfiability:
-            vars = set()
+        if tester.REQUIRE_ALL_VARIABLES and result is not False and satisfiability:
+            variables = {abs(literal) for clause in clause_set for literal in clause}
 
-            for clause in clause_set:
-                for var in clause: vars.add(abs(var))
-
-            if len(vars) != len(result):
-                print(f"Warning index {i} assignment {result} did not contain all literals: {vars}")
+            if variables != {abs(literal) for literal in result}:
+                print(f"Warning index {i} assignment {result} did match expected variables: {variables}")
 
     print(f"Passed {passed_cases}/{len(configs)}, {passed_cases/len(configs)*100:.3f}%")
     if len(failed_cases) > 0: print(f"Writing failed cases to text file")
 
-    for i, case in enumerate(failed_cases):
-        with open("results.txt", "r") as f:
+    with open("results.txt", "w+") as f:
+        for i, case in enumerate(failed_cases):
             word = 'satisfiable' if case[1] else 'unsatisfiable'
 
-            f.write(f"# {i} {word}\n{generator.dimacs(case[0])}\n")
+            f.write(f"# {i} {word}\n{generator.dimacs_string(case[0])}\n")
 
 # import your own [WORKING] implementation here (and remove these three lines)
 import sys
@@ -57,11 +56,9 @@ import implementation
 # Writes failed cases to a text file
 
 generate_and_test(
-    generator.generateConfigs(1000, (3, 3), (4, 4)),    # n cases, with a-b variables and c-d clauses
+    generator.generate_configs(1000, (3, 3), (4, 4)),    # n cases, with a-b variables and c-d clauses
     implementation.simple_sat_solve,                    # your known working sat-solve function
     implementation.dpll_sat_solve,                      # sat solve to test
-    generator.DEFAULT_LITERAL_PRESENCE_WEIGHT,
-    True,                                               # require all literals
     True,                                               # using simple sat solve as tester, so true
     False                                               # testing dpll sat solve, so false
 )

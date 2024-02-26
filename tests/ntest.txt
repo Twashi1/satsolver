@@ -1,0 +1,7000 @@
+# 1 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 -2 0
+1 -2 0
+1 -2 -3 0
+
+# 2 satisfiable
+p cnf 3 4
+1 -3 0
+1 2 0
+-1 -2 3 0
+1 2 0
+
+# 3 satisfiable
+p cnf 3 4
+-1 -3 0
+-2 -3 0
+2 3 0
+1 -2 0
+
+# 4 satisfiable
+p cnf 3 4
+1 -2 -3 0
+2 0
+2 3 0
+-1 2 -3 0
+
+# 5 satisfiable
+p cnf 3 4
+1 2 0
+-1 -2 -3 0
+1 -2 3 0
+2 3 0
+
+# 6 satisfiable
+p cnf 3 4
+1 2 3 0
+2 -3 0
+-1 2 3 0
+-1 2 3 0
+
+# 7 satisfiable
+p cnf 3 4
+1 3 0
+1 3 0
+1 2 3 0
+-2 3 0
+
+# 8 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 -2 3 0
+-1 -2 -3 0
+1 -2 3 0
+
+# 9 satisfiable
+p cnf 3 4
+-1 0
+1 -2 0
+1 -2 3 0
+-1 0
+
+# 10 satisfiable
+p cnf 3 4
+2 -3 0
+1 -2 3 0
+1 0
+1 2 3 0
+
+# 11 unsatisfiable
+p cnf 3 4
+1 0
+1 3 0
+1 2 3 0
+-1 0
+
+# 12 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-2 3 0
+-2 -3 0
+-1 -2 3 0
+
+# 13 unsatisfiable
+p cnf 3 4
+-1 -3 0
+1 0
+-1 2 3 0
+-1 3 0
+
+# 14 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 -2 -3 0
+1 2 -3 0
+1 -2 -3 0
+
+# 15 satisfiable
+p cnf 3 4
+2 3 0
+-3 0
+2 3 0
+-1 -2 -3 0
+
+# 16 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 2 0
+-1 2 -3 0
+3 0
+
+# 17 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 -3 0
+-1 0
+1 -2 3 0
+
+# 18 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 -2 3 0
+1 2 0
+-1 -2 -3 0
+
+# 19 satisfiable
+p cnf 3 4
+1 2 0
+-1 2 3 0
+1 2 -3 0
+-1 -2 3 0
+
+# 20 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 -2 3 0
+-2 -3 0
+-1 2 -3 0
+
+# 21 satisfiable
+p cnf 3 4
+1 2 0
+1 2 0
+-1 2 3 0
+2 3 0
+
+# 22 satisfiable
+p cnf 3 4
+2 0
+1 2 -3 0
+3 0
+-1 -2 -3 0
+
+# 23 satisfiable
+p cnf 3 4
+1 3 0
+-1 -2 -3 0
+1 2 0
+2 3 0
+
+# 24 satisfiable
+p cnf 3 4
+2 3 0
+-1 2 0
+1 2 -3 0
+-1 0
+
+# 25 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 -2 0
+1 -2 -3 0
+1 -3 0
+
+# 26 satisfiable
+p cnf 3 4
+-1 -2 3 0
+3 0
+1 -2 3 0
+1 2 -3 0
+
+# 27 satisfiable
+p cnf 3 4
+-3 0
+-1 2 -3 0
+1 0
+1 -2 3 0
+
+# 28 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 0
+2 -3 0
+1 -2 -3 0
+
+# 29 satisfiable
+p cnf 3 4
+-1 -3 0
+1 2 0
+-1 2 -3 0
+3 0
+
+# 30 satisfiable
+p cnf 3 4
+1 -2 -3 0
+1 -2 -3 0
+1 2 -3 0
+1 -2 3 0
+
+# 31 satisfiable
+p cnf 3 4
+-1 3 0
+1 2 -3 0
+-1 2 3 0
+1 -2 -3 0
+
+# 32 satisfiable
+p cnf 3 4
+1 -2 0
+-2 0
+1 -2 -3 0
+2 3 0
+
+# 33 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 -3 0
+-1 -2 3 0
+-1 -2 -3 0
+
+# 34 satisfiable
+p cnf 3 4
+-1 -2 0
+1 -2 3 0
+1 2 -3 0
+-1 -2 0
+
+# 35 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-1 -2 3 0
+-1 2 0
+1 -2 3 0
+
+# 36 satisfiable
+p cnf 3 4
+1 2 -3 0
+2 -3 0
+1 2 3 0
+1 2 0
+
+# 37 satisfiable
+p cnf 3 4
+-1 -3 0
+-1 -2 3 0
+-1 -2 3 0
+1 0
+
+# 38 satisfiable
+p cnf 3 4
+-2 -3 0
+1 2 3 0
+1 2 3 0
+1 2 0
+
+# 39 satisfiable
+p cnf 3 4
+1 2 -3 0
+-1 -2 0
+-2 -3 0
+-2 -3 0
+
+# 40 satisfiable
+p cnf 3 4
+1 -2 0
+-1 -3 0
+-2 3 0
+-1 2 -3 0
+
+# 41 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 2 3 0
+1 -2 -3 0
+1 -2 -3 0
+
+# 42 satisfiable
+p cnf 3 4
+1 -2 3 0
+-2 3 0
+1 -2 0
+-1 2 0
+
+# 43 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-2 -3 0
+1 2 -3 0
+1 -2 -3 0
+
+# 44 satisfiable
+p cnf 3 4
+1 2 0
+1 -2 -3 0
+-2 3 0
+1 -2 3 0
+
+# 45 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 2 3 0
+-1 2 -3 0
+-1 -2 3 0
+
+# 46 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 -3 0
+1 2 -3 0
+1 -3 0
+
+# 47 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 -2 0
+2 -3 0
+1 2 0
+
+# 48 satisfiable
+p cnf 3 4
+2 0
+1 -2 3 0
+-1 -2 3 0
+-1 -3 0
+
+# 49 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 0
+-1 2 -3 0
+-1 -2 -3 0
+
+# 50 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 3 0
+-1 2 -3 0
+-2 0
+
+# 51 satisfiable
+p cnf 3 4
+3 0
+-1 2 -3 0
+2 -3 0
+-1 2 0
+
+# 52 satisfiable
+p cnf 3 4
+1 2 3 0
+1 -2 3 0
+1 2 -3 0
+1 2 3 0
+
+# 53 satisfiable
+p cnf 3 4
+2 -3 0
+-1 -2 -3 0
+-1 2 3 0
+-1 -2 -3 0
+
+# 54 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+2 3 0
+1 2 3 0
+1 2 0
+
+# 55 satisfiable
+p cnf 3 4
+1 -2 0
+1 0
+-1 -2 3 0
+-2 -3 0
+
+# 56 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-3 0
+1 -2 3 0
+1 2 -3 0
+
+# 57 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+2 -3 0
+-1 -3 0
+1 2 -3 0
+
+# 58 satisfiable
+p cnf 3 4
+-2 -3 0
+-1 2 -3 0
+-1 -2 3 0
+1 3 0
+
+# 59 satisfiable
+p cnf 3 4
+1 2 3 0
+1 -2 -3 0
+-1 0
+-1 -3 0
+
+# 60 satisfiable
+p cnf 3 4
+-1 2 0
+-1 3 0
+2 3 0
+-1 -2 -3 0
+
+# 61 satisfiable
+p cnf 3 4
+1 2 3 0
+1 -2 3 0
+-1 -2 -3 0
+-1 2 -3 0
+
+# 62 satisfiable
+p cnf 3 4
+-2 -3 0
+1 -2 3 0
+1 -2 -3 0
+-1 2 -3 0
+
+# 63 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 2 3 0
+-1 2 3 0
+-1 -2 0
+
+# 64 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-1 -2 3 0
+1 -2 -3 0
+2 3 0
+
+# 65 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-2 0
+-1 -2 -3 0
+1 3 0
+
+# 66 satisfiable
+p cnf 3 4
+2 -3 0
+-1 0
+1 2 -3 0
+-1 -2 -3 0
+
+# 67 satisfiable
+p cnf 3 4
+1 2 -3 0
+-1 -2 3 0
+1 2 3 0
+1 2 -3 0
+
+# 68 satisfiable
+p cnf 3 4
+-1 3 0
+-1 3 0
+-2 0
+-1 2 3 0
+
+# 69 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 -2 -3 0
+1 -2 3 0
+1 2 3 0
+
+# 70 satisfiable
+p cnf 3 4
+-1 -2 0
+1 2 3 0
+1 0
+1 -2 -3 0
+
+# 71 satisfiable
+p cnf 3 4
+1 2 3 0
+-2 0
+-1 2 -3 0
+2 3 0
+
+# 72 satisfiable
+p cnf 3 4
+1 2 -3 0
+2 3 0
+-1 -2 -3 0
+-1 -3 0
+
+# 73 satisfiable
+p cnf 3 4
+-1 -2 0
+-2 0
+-1 2 -3 0
+-1 -2 3 0
+
+# 74 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-1 3 0
+2 3 0
+1 -2 3 0
+
+# 75 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 -3 0
+-1 2 -3 0
+-1 -2 3 0
+
+# 76 satisfiable
+p cnf 3 4
+-2 3 0
+1 2 3 0
+-1 -2 -3 0
+-1 2 3 0
+
+# 77 satisfiable
+p cnf 3 4
+-2 3 0
+1 2 -3 0
+-1 -2 0
+2 -3 0
+
+# 78 satisfiable
+p cnf 3 4
+1 2 3 0
+1 2 -3 0
+1 2 0
+-1 2 3 0
+
+# 79 satisfiable
+p cnf 3 4
+1 -2 -3 0
+1 3 0
+-2 3 0
+1 2 -3 0
+
+# 80 satisfiable
+p cnf 3 4
+1 2 3 0
+-2 3 0
+-1 -2 0
+-2 3 0
+
+# 81 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 2 3 0
+-1 2 3 0
+-1 2 0
+
+# 82 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 0
+2 3 0
+-1 -3 0
+
+# 83 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 2 3 0
+1 -2 0
+-1 2 3 0
+
+# 84 satisfiable
+p cnf 3 4
+-2 0
+1 2 3 0
+1 -2 3 0
+-2 -3 0
+
+# 85 satisfiable
+p cnf 3 4
+1 3 0
+-3 0
+-1 2 -3 0
+1 -2 3 0
+
+# 86 satisfiable
+p cnf 3 4
+-2 0
+1 2 -3 0
+-3 0
+-1 -2 0
+
+# 87 satisfiable
+p cnf 3 4
+2 3 0
+1 -2 0
+-1 -2 3 0
+-1 2 3 0
+
+# 88 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 -2 3 0
+-1 -2 3 0
+-1 -2 0
+
+# 89 satisfiable
+p cnf 3 4
+2 3 0
+1 0
+1 3 0
+-1 -2 -3 0
+
+# 90 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 2 -3 0
+1 2 -3 0
+-1 2 3 0
+
+# 91 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 -2 3 0
+1 2 -3 0
+-1 3 0
+
+# 92 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 -2 0
+1 -2 3 0
+1 -2 3 0
+
+# 93 satisfiable
+p cnf 3 4
+1 0
+1 -2 -3 0
+-2 3 0
+-2 -3 0
+
+# 94 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 0
+-1 0
+1 3 0
+
+# 95 satisfiable
+p cnf 3 4
+-2 3 0
+2 3 0
+-2 0
+-1 2 0
+
+# 96 satisfiable
+p cnf 3 4
+-1 2 0
+-1 2 3 0
+-2 -3 0
+-2 3 0
+
+# 97 satisfiable
+p cnf 3 4
+1 2 0
+1 -2 -3 0
+-2 -3 0
+1 2 -3 0
+
+# 98 satisfiable
+p cnf 3 4
+1 -2 -3 0
+2 3 0
+-2 -3 0
+1 3 0
+
+# 99 satisfiable
+p cnf 3 4
+1 3 0
+1 2 3 0
+1 3 0
+1 2 3 0
+
+# 100 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 -2 3 0
+-1 2 3 0
+-1 -2 -3 0
+
+# 101 satisfiable
+p cnf 3 4
+3 0
+-2 3 0
+1 -2 3 0
+1 3 0
+
+# 102 satisfiable
+p cnf 3 4
+-1 3 0
+-1 2 3 0
+-1 2 -3 0
+-1 -3 0
+
+# 103 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 -2 -3 0
+-1 -2 3 0
+1 2 3 0
+
+# 104 satisfiable
+p cnf 3 4
+1 2 -3 0
+-3 0
+1 2 -3 0
+-1 2 -3 0
+
+# 105 satisfiable
+p cnf 3 4
+1 2 0
+1 -2 3 0
+-1 2 -3 0
+1 -2 -3 0
+
+# 106 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-2 -3 0
+-1 2 -3 0
+-1 2 -3 0
+
+# 107 satisfiable
+p cnf 3 4
+2 -3 0
+-1 -2 -3 0
+1 3 0
+1 2 0
+
+# 108 satisfiable
+p cnf 3 4
+-1 0
+1 -2 -3 0
+1 3 0
+-1 0
+
+# 109 satisfiable
+p cnf 3 4
+-1 -3 0
+1 2 0
+-1 2 -3 0
+-1 2 0
+
+# 110 satisfiable
+p cnf 3 4
+-2 0
+1 -2 3 0
+-1 2 3 0
+1 2 -3 0
+
+# 111 satisfiable
+p cnf 3 4
+-1 3 0
+-1 -2 -3 0
+1 -2 -3 0
+1 2 0
+
+# 112 satisfiable
+p cnf 3 4
+1 2 3 0
+1 2 0
+1 -3 0
+-1 -2 -3 0
+
+# 113 satisfiable
+p cnf 3 4
+1 -2 -3 0
+1 -3 0
+-1 3 0
+1 2 0
+
+# 114 satisfiable
+p cnf 3 4
+1 -3 0
+1 2 0
+1 2 3 0
+1 -2 -3 0
+
+# 115 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 3 0
+-2 -3 0
+-2 3 0
+
+# 116 satisfiable
+p cnf 3 4
+1 -2 -3 0
+1 2 3 0
+2 -3 0
+2 0
+
+# 117 satisfiable
+p cnf 3 4
+-1 3 0
+-1 2 3 0
+1 -2 3 0
+1 3 0
+
+# 118 satisfiable
+p cnf 2 4
+-1 2 0
+-1 -2 0
+1 2 0
+-1 2 0
+
+# 119 satisfiable
+p cnf 3 4
+2 3 0
+-1 -2 3 0
+-2 0
+2 3 0
+
+# 120 satisfiable
+p cnf 3 4
+1 -2 -3 0
+1 2 -3 0
+1 2 3 0
+1 2 -3 0
+
+# 121 satisfiable
+p cnf 3 4
+-1 -2 0
+1 3 0
+-1 -3 0
+-1 -2 -3 0
+
+# 122 satisfiable
+p cnf 3 4
+-1 3 0
+1 -2 3 0
+1 -3 0
+1 -2 0
+
+# 123 satisfiable
+p cnf 3 4
+2 3 0
+-1 2 3 0
+-1 2 0
+1 -2 3 0
+
+# 124 satisfiable
+p cnf 3 4
+-1 -3 0
+-1 0
+1 -2 3 0
+-1 2 0
+
+# 125 satisfiable
+p cnf 3 4
+1 2 0
+1 2 3 0
+-3 0
+1 -2 3 0
+
+# 126 satisfiable
+p cnf 3 4
+1 -2 0
+1 3 0
+1 2 3 0
+1 -2 -3 0
+
+# 127 satisfiable
+p cnf 3 4
+2 3 0
+-1 -3 0
+-1 2 -3 0
+-1 -2 0
+
+# 128 satisfiable
+p cnf 3 4
+1 -2 3 0
+-2 0
+1 2 -3 0
+-2 -3 0
+
+# 129 satisfiable
+p cnf 3 4
+-1 2 3 0
+-2 0
+-1 -2 3 0
+1 2 3 0
+
+# 130 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 -2 0
+1 2 -3 0
+1 -2 0
+
+# 131 satisfiable
+p cnf 3 4
+1 3 0
+1 2 3 0
+-1 2 -3 0
+2 3 0
+
+# 132 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 -2 3 0
+-1 -3 0
+1 -2 -3 0
+
+# 133 satisfiable
+p cnf 3 4
+-2 0
+-1 -2 3 0
+1 2 3 0
+1 -2 3 0
+
+# 134 satisfiable
+p cnf 3 4
+1 3 0
+1 -3 0
+1 -2 -3 0
+-1 3 0
+
+# 135 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 -2 -3 0
+-1 -2 3 0
+-1 -3 0
+
+# 136 satisfiable
+p cnf 3 4
+-2 -3 0
+-1 2 -3 0
+-1 -2 -3 0
+1 3 0
+
+# 137 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-1 -2 -3 0
+1 -2 3 0
+1 2 -3 0
+
+# 138 satisfiable
+p cnf 3 4
+1 -2 3 0
+-2 3 0
+-1 2 3 0
+-1 -2 3 0
+
+# 139 satisfiable
+p cnf 3 4
+1 2 3 0
+3 0
+-1 -2 3 0
+-1 2 -3 0
+
+# 140 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 2 0
+3 0
+1 3 0
+
+# 141 satisfiable
+p cnf 3 4
+1 2 3 0
+1 -2 3 0
+-1 2 3 0
+1 3 0
+
+# 142 satisfiable
+p cnf 3 4
+2 -3 0
+1 2 3 0
+-1 -2 3 0
+1 2 3 0
+
+# 143 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 2 -3 0
+1 2 3 0
+-1 2 0
+
+# 144 satisfiable
+p cnf 3 4
+-1 0
+-1 2 3 0
+-1 -2 3 0
+-1 -2 0
+
+# 145 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 -2 3 0
+3 0
+-1 -2 3 0
+
+# 146 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-1 2 -3 0
+1 -2 -3 0
+-1 2 0
+
+# 147 satisfiable
+p cnf 3 4
+2 -3 0
+2 -3 0
+-1 -2 0
+-1 -2 -3 0
+
+# 148 satisfiable
+p cnf 3 4
+-1 -2 0
+-1 -2 3 0
+1 -2 0
+-1 -2 3 0
+
+# 149 satisfiable
+p cnf 3 4
+1 -3 0
+1 -2 3 0
+1 -2 3 0
+-1 2 3 0
+
+# 150 satisfiable
+p cnf 3 4
+-2 -3 0
+-1 2 3 0
+1 -2 3 0
+-1 -2 -3 0
+
+# 151 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 -2 -3 0
+-1 2 0
+2 3 0
+
+# 152 satisfiable
+p cnf 3 4
+-1 3 0
+1 2 -3 0
+1 -3 0
+1 2 -3 0
+
+# 153 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 -2 3 0
+1 2 -3 0
+-2 3 0
+
+# 154 satisfiable
+p cnf 3 4
+2 -3 0
+1 3 0
+1 -2 3 0
+-1 -3 0
+
+# 155 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 3 0
+-2 0
+-1 2 -3 0
+
+# 156 satisfiable
+p cnf 3 4
+-2 -3 0
+-1 2 3 0
+1 -2 -3 0
+2 3 0
+
+# 157 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 2 3 0
+1 2 -3 0
+1 2 3 0
+
+# 158 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 2 -3 0
+-1 2 0
+1 3 0
+
+# 159 satisfiable
+p cnf 3 4
+1 -3 0
+2 0
+-1 -2 -3 0
+1 -2 -3 0
+
+# 160 satisfiable
+p cnf 3 4
+1 2 3 0
+1 -2 -3 0
+1 0
+-1 -2 3 0
+
+# 161 satisfiable
+p cnf 3 4
+-3 0
+-1 -2 -3 0
+-1 2 0
+1 2 -3 0
+
+# 162 satisfiable
+p cnf 3 4
+-1 -3 0
+-1 -2 3 0
+1 2 3 0
+1 -2 3 0
+
+# 163 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 -2 3 0
+1 -2 -3 0
+-2 -3 0
+
+# 164 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 2 0
+1 -2 3 0
+-2 -3 0
+
+# 165 satisfiable
+p cnf 3 4
+1 2 0
+-1 2 0
+1 -3 0
+-3 0
+
+# 166 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 2 -3 0
+1 -2 0
+1 -2 -3 0
+
+# 167 satisfiable
+p cnf 3 4
+1 -3 0
+1 2 -3 0
+1 -2 -3 0
+2 -3 0
+
+# 168 satisfiable
+p cnf 3 4
+3 0
+1 -2 -3 0
+1 2 3 0
+-1 3 0
+
+# 169 satisfiable
+p cnf 3 4
+-1 2 0
+-1 2 3 0
+-1 -3 0
+-1 -2 3 0
+
+# 170 satisfiable
+p cnf 3 4
+-1 3 0
+1 2 0
+-1 3 0
+1 -3 0
+
+# 171 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 2 3 0
+1 -2 3 0
+-1 2 -3 0
+
+# 172 satisfiable
+p cnf 3 4
+-1 0
+-1 2 -3 0
+-1 -3 0
+2 -3 0
+
+# 173 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 2 -3 0
+-1 -2 -3 0
+-2 3 0
+
+# 174 satisfiable
+p cnf 3 4
+3 0
+1 2 3 0
+-1 2 3 0
+-2 3 0
+
+# 175 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 -3 0
+1 -2 3 0
+-1 2 -3 0
+
+# 176 satisfiable
+p cnf 3 4
+1 2 0
+3 0
+2 0
+-1 -2 3 0
+
+# 177 satisfiable
+p cnf 3 4
+-2 -3 0
+-1 -2 -3 0
+2 3 0
+-1 -3 0
+
+# 178 satisfiable
+p cnf 3 4
+-1 -2 0
+-1 2 -3 0
+-1 -2 3 0
+-1 0
+
+# 179 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-1 -3 0
+-3 0
+-2 -3 0
+
+# 180 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 -2 0
+1 2 3 0
+1 -2 0
+
+# 181 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 2 0
+-1 -3 0
+1 2 0
+
+# 182 satisfiable
+p cnf 3 4
+1 -3 0
+-1 2 -3 0
+-3 0
+1 -2 0
+
+# 183 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-1 -3 0
+1 2 -3 0
+1 3 0
+
+# 184 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-1 2 -3 0
+1 2 -3 0
+-3 0
+
+# 185 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 -2 -3 0
+1 -2 -3 0
+1 -2 -3 0
+
+# 186 satisfiable
+p cnf 3 4
+1 -3 0
+-1 3 0
+-1 2 3 0
+1 3 0
+
+# 187 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 -2 3 0
+-1 2 3 0
+1 0
+
+# 188 satisfiable
+p cnf 3 4
+1 -2 -3 0
+1 -2 0
+-1 -2 0
+-1 3 0
+
+# 189 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 2 3 0
+1 3 0
+-1 2 -3 0
+
+# 190 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 -2 3 0
+2 -3 0
+-1 -3 0
+
+# 191 satisfiable
+p cnf 3 4
+-1 -3 0
+1 -2 -3 0
+2 0
+-1 -2 3 0
+
+# 192 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-1 3 0
+-2 -3 0
+1 2 3 0
+
+# 193 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-1 3 0
+1 -2 0
+-2 3 0
+
+# 194 satisfiable
+p cnf 3 4
+-2 -3 0
+-1 -2 0
+1 -3 0
+-1 2 -3 0
+
+# 195 satisfiable
+p cnf 3 4
+1 -3 0
+-1 -2 -3 0
+-1 -2 3 0
+-1 -2 0
+
+# 196 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 3 0
+2 0
+-1 -2 3 0
+
+# 197 satisfiable
+p cnf 3 4
+-1 -3 0
+-1 -2 3 0
+-1 -2 -3 0
+1 3 0
+
+# 198 satisfiable
+p cnf 3 4
+1 3 0
+-1 2 0
+1 -3 0
+-1 2 0
+
+# 199 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-1 2 -3 0
+-2 3 0
+-1 -2 0
+
+# 200 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 -2 3 0
+1 2 -3 0
+1 2 -3 0
+
+# 201 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 2 -3 0
+1 -3 0
+-1 -3 0
+
+# 202 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 3 0
+-1 2 0
+2 3 0
+
+# 203 satisfiable
+p cnf 3 4
+-1 3 0
+-2 3 0
+1 -2 -3 0
+-3 0
+
+# 204 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 2 -3 0
+-1 -3 0
+-1 -2 -3 0
+
+# 205 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 2 -3 0
+3 0
+1 3 0
+
+# 206 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 3 0
+1 2 3 0
+1 0
+
+# 207 satisfiable
+p cnf 3 4
+1 -3 0
+1 -2 3 0
+-3 0
+-3 0
+
+# 208 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 2 0
+-1 2 3 0
+-1 -2 3 0
+
+# 209 satisfiable
+p cnf 3 4
+3 0
+-1 -2 3 0
+-1 2 -3 0
+1 2 3 0
+
+# 210 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 2 -3 0
+-1 2 3 0
+2 -3 0
+
+# 211 satisfiable
+p cnf 3 4
+1 -2 0
+-1 2 -3 0
+1 -2 -3 0
+-1 -2 3 0
+
+# 212 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 -3 0
+1 2 3 0
+1 2 -3 0
+
+# 213 satisfiable
+p cnf 3 4
+-1 2 0
+-1 2 3 0
+1 2 3 0
+1 -2 -3 0
+
+# 214 satisfiable
+p cnf 3 4
+2 3 0
+-1 -2 3 0
+2 -3 0
+1 2 -3 0
+
+# 215 satisfiable
+p cnf 3 4
+-1 -3 0
+-1 -2 -3 0
+1 -3 0
+1 -3 0
+
+# 216 satisfiable
+p cnf 3 4
+-1 2 0
+1 2 3 0
+2 3 0
+-1 0
+
+# 217 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 2 -3 0
+-1 2 3 0
+-1 0
+
+# 218 satisfiable
+p cnf 3 4
+2 3 0
+1 2 -3 0
+-1 2 3 0
+-1 2 3 0
+
+# 219 satisfiable
+p cnf 3 4
+1 2 -3 0
+-1 2 0
+-1 0
+1 -2 -3 0
+
+# 220 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 0
+1 2 0
+1 -2 3 0
+
+# 221 satisfiable
+p cnf 3 4
+-1 2 3 0
+-2 0
+-1 -2 0
+-1 -2 -3 0
+
+# 222 satisfiable
+p cnf 3 4
+-1 -2 0
+-1 -2 -3 0
+1 -2 3 0
+1 -3 0
+
+# 223 satisfiable
+p cnf 3 4
+-3 0
+1 2 -3 0
+-2 0
+2 -3 0
+
+# 224 satisfiable
+p cnf 3 4
+-1 2 0
+1 2 -3 0
+1 -2 -3 0
+2 -3 0
+
+# 225 satisfiable
+p cnf 3 4
+1 2 -3 0
+2 -3 0
+1 2 0
+-1 -2 3 0
+
+# 226 satisfiable
+p cnf 3 4
+2 -3 0
+1 3 0
+1 3 0
+-1 -2 0
+
+# 227 satisfiable
+p cnf 3 4
+1 3 0
+1 2 0
+1 -3 0
+-1 -2 -3 0
+
+# 228 satisfiable
+p cnf 3 4
+-3 0
+1 2 3 0
+1 2 3 0
+-1 -2 -3 0
+
+# 229 satisfiable
+p cnf 3 4
+1 2 3 0
+1 2 3 0
+-1 2 -3 0
+1 2 -3 0
+
+# 230 unsatisfiable
+p cnf 3 4
+1 -3 0
+-2 3 0
+2 0
+-1 -2 -3 0
+
+# 231 satisfiable
+p cnf 3 4
+2 3 0
+1 2 3 0
+-1 -2 -3 0
+1 3 0
+
+# 232 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 2 0
+1 -2 -3 0
+1 2 3 0
+
+# 233 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 2 3 0
+1 0
+-1 2 -3 0
+
+# 234 satisfiable
+p cnf 3 4
+1 0
+-2 -3 0
+-1 2 3 0
+1 2 0
+
+# 235 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 -2 -3 0
+-1 2 -3 0
+-1 -2 -3 0
+
+# 236 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 -2 0
+-1 -2 3 0
+-1 -2 0
+
+# 237 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 -3 0
+1 2 -3 0
+1 2 -3 0
+
+# 238 satisfiable
+p cnf 3 4
+-2 -3 0
+1 -3 0
+-1 2 3 0
+1 -2 3 0
+
+# 239 satisfiable
+p cnf 3 4
+2 3 0
+-1 -2 0
+1 2 3 0
+1 2 0
+
+# 240 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 -2 -3 0
+1 -2 -3 0
+1 2 3 0
+
+# 241 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 2 3 0
+1 2 3 0
+1 -2 3 0
+
+# 242 satisfiable
+p cnf 3 4
+1 -2 -3 0
+1 -2 3 0
+1 -2 3 0
+1 2 3 0
+
+# 243 unsatisfiable
+p cnf 3 4
+1 2 3 0
+-1 2 -3 0
+-2 0
+2 0
+
+# 244 satisfiable
+p cnf 3 4
+1 -3 0
+-1 2 0
+1 -2 3 0
+1 2 3 0
+
+# 245 satisfiable
+p cnf 2 4
+-1 -2 0
+1 2 0
+2 0
+-1 2 0
+
+# 246 satisfiable
+p cnf 3 4
+1 -2 0
+-1 -2 3 0
+2 -3 0
+-1 -2 -3 0
+
+# 247 satisfiable
+p cnf 3 4
+1 2 0
+-1 -2 3 0
+1 2 -3 0
+-1 2 -3 0
+
+# 248 satisfiable
+p cnf 3 4
+-1 -3 0
+-1 3 0
+-1 -2 3 0
+-1 -2 -3 0
+
+# 249 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 -2 3 0
+-1 2 -3 0
+1 2 3 0
+
+# 250 satisfiable
+p cnf 3 4
+-1 3 0
+-1 0
+1 -2 -3 0
+1 2 0
+
+# 251 satisfiable
+p cnf 3 4
+-3 0
+1 -2 3 0
+1 -2 3 0
+-1 -2 3 0
+
+# 252 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 -2 3 0
+-1 0
+1 -2 -3 0
+
+# 253 satisfiable
+p cnf 3 4
+-1 -3 0
+-1 -2 3 0
+-1 2 3 0
+-1 3 0
+
+# 254 satisfiable
+p cnf 3 4
+-1 2 0
+-1 2 -3 0
+1 2 0
+1 -2 3 0
+
+# 255 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 2 0
+1 2 -3 0
+-2 -3 0
+
+# 256 unsatisfiable
+p cnf 3 4
+1 -2 3 0
+-3 0
+2 3 0
+-1 0
+
+# 257 satisfiable
+p cnf 3 4
+-1 2 -3 0
+2 0
+1 -2 3 0
+1 -2 0
+
+# 258 satisfiable
+p cnf 3 4
+1 2 3 0
+1 2 -3 0
+-1 2 0
+2 -3 0
+
+# 259 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 2 -3 0
+-1 -3 0
+-1 3 0
+
+# 260 satisfiable
+p cnf 3 4
+-2 3 0
+-1 2 0
+-1 -2 3 0
+-1 -2 3 0
+
+# 261 satisfiable
+p cnf 3 4
+1 2 0
+2 3 0
+-2 -3 0
+1 -2 -3 0
+
+# 262 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 -3 0
+1 2 3 0
+-1 3 0
+
+# 263 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 2 -3 0
+1 2 -3 0
+1 -2 0
+
+# 264 satisfiable
+p cnf 3 4
+1 2 0
+-1 2 3 0
+1 2 -3 0
+-1 3 0
+
+# 265 satisfiable
+p cnf 3 4
+1 2 3 0
+1 3 0
+1 0
+1 -2 -3 0
+
+# 266 satisfiable
+p cnf 3 4
+-3 0
+-1 2 3 0
+-1 -2 3 0
+-1 -2 0
+
+# 267 unsatisfiable
+p cnf 2 4
+-1 -2 0
+1 0
+-1 2 0
+-1 2 0
+
+# 268 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 -2 0
+-1 -2 -3 0
+1 2 3 0
+
+# 269 satisfiable
+p cnf 3 4
+2 -3 0
+-1 2 -3 0
+-1 2 3 0
+1 -2 3 0
+
+# 270 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 3 0
+1 2 -3 0
+1 2 -3 0
+
+# 271 satisfiable
+p cnf 3 4
+-1 3 0
+3 0
+3 0
+1 -2 -3 0
+
+# 272 satisfiable
+p cnf 3 4
+1 2 0
+1 2 3 0
+1 -2 0
+1 -2 -3 0
+
+# 273 satisfiable
+p cnf 3 4
+1 3 0
+2 0
+1 -2 3 0
+-1 -2 -3 0
+
+# 274 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 2 3 0
+1 -2 3 0
+-1 2 0
+
+# 275 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 -2 -3 0
+-2 -3 0
+-1 2 0
+
+# 276 satisfiable
+p cnf 3 4
+-1 2 0
+2 -3 0
+-1 -2 3 0
+1 -3 0
+
+# 277 satisfiable
+p cnf 3 4
+1 -2 -3 0
+1 3 0
+-1 3 0
+-2 3 0
+
+# 278 satisfiable
+p cnf 3 4
+-1 3 0
+1 2 0
+-1 -3 0
+1 -2 -3 0
+
+# 279 satisfiable
+p cnf 3 4
+1 -3 0
+1 2 3 0
+-1 2 -3 0
+2 -3 0
+
+# 280 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 2 0
+-1 -2 0
+1 2 3 0
+
+# 281 satisfiable
+p cnf 3 4
+2 0
+-1 -3 0
+-1 -2 -3 0
+1 2 0
+
+# 282 satisfiable
+p cnf 3 4
+-1 2 0
+-1 2 0
+2 0
+1 2 -3 0
+
+# 283 satisfiable
+p cnf 3 4
+1 2 -3 0
+-3 0
+-1 -2 3 0
+2 0
+
+# 284 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 -3 0
+-1 -2 3 0
+1 -2 3 0
+
+# 285 satisfiable
+p cnf 3 4
+-2 0
+1 3 0
+-1 -2 3 0
+1 2 3 0
+
+# 286 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 2 -3 0
+2 -3 0
+-1 2 0
+
+# 287 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 2 0
+-1 2 3 0
+1 0
+
+# 288 satisfiable
+p cnf 3 4
+2 3 0
+1 2 3 0
+1 2 -3 0
+1 2 0
+
+# 289 satisfiable
+p cnf 3 4
+2 3 0
+1 2 -3 0
+-1 0
+1 -2 -3 0
+
+# 290 satisfiable
+p cnf 3 4
+-1 -2 0
+1 2 0
+2 -3 0
+1 -2 -3 0
+
+# 291 unsatisfiable
+p cnf 3 4
+-3 0
+3 0
+-1 -2 -3 0
+1 -2 -3 0
+
+# 292 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+3 0
+-1 2 -3 0
+-2 -3 0
+
+# 293 satisfiable
+p cnf 2 4
+2 0
+2 0
+1 2 0
+-1 0
+
+# 294 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 2 3 0
+-1 -2 -3 0
+1 -3 0
+
+# 295 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-1 -3 0
+1 2 3 0
+1 2 3 0
+
+# 296 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-1 2 -3 0
+2 -3 0
+1 -2 3 0
+
+# 297 satisfiable
+p cnf 3 4
+-1 -3 0
+-2 0
+-1 2 0
+1 -2 -3 0
+
+# 298 satisfiable
+p cnf 3 4
+2 3 0
+3 0
+1 3 0
+-1 0
+
+# 299 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 -2 3 0
+-1 -2 -3 0
+1 2 -3 0
+
+# 300 satisfiable
+p cnf 3 4
+-1 2 0
+1 -2 3 0
+2 0
+-1 0
+
+# 301 satisfiable
+p cnf 3 4
+1 -2 0
+-1 -2 3 0
+1 -2 3 0
+1 2 0
+
+# 302 satisfiable
+p cnf 3 4
+1 -2 -3 0
+2 0
+1 2 3 0
+1 2 3 0
+
+# 303 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 -2 -3 0
+1 2 3 0
+-1 2 3 0
+
+# 304 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-1 3 0
+3 0
+1 3 0
+
+# 305 satisfiable
+p cnf 3 4
+-1 0
+2 -3 0
+1 -2 -3 0
+-1 -2 0
+
+# 306 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-2 -3 0
+1 -2 -3 0
+2 0
+
+# 307 satisfiable
+p cnf 3 4
+-2 -3 0
+-1 -2 3 0
+-1 2 3 0
+3 0
+
+# 308 satisfiable
+p cnf 3 4
+2 -3 0
+1 2 -3 0
+-1 3 0
+1 2 -3 0
+
+# 309 satisfiable
+p cnf 3 4
+1 -2 0
+2 0
+2 0
+-2 -3 0
+
+# 310 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-1 -2 -3 0
+2 -3 0
+1 2 -3 0
+
+# 311 satisfiable
+p cnf 3 4
+-2 3 0
+1 2 3 0
+-1 -2 0
+-1 3 0
+
+# 312 satisfiable
+p cnf 3 4
+-1 -3 0
+1 2 -3 0
+-1 -2 -3 0
+1 2 0
+
+# 313 satisfiable
+p cnf 3 4
+2 3 0
+-1 2 -3 0
+1 -2 3 0
+1 2 0
+
+# 314 satisfiable
+p cnf 3 4
+-1 2 -3 0
+3 0
+-2 3 0
+1 -3 0
+
+# 315 satisfiable
+p cnf 3 4
+1 2 3 0
+-3 0
+-1 0
+-1 -2 -3 0
+
+# 316 satisfiable
+p cnf 3 4
+-1 -2 3 0
+3 0
+1 2 -3 0
+1 2 3 0
+
+# 317 satisfiable
+p cnf 3 4
+1 2 0
+1 -3 0
+-1 2 -3 0
+-1 2 0
+
+# 318 satisfiable
+p cnf 3 4
+2 -3 0
+2 -3 0
+1 -2 3 0
+-1 2 3 0
+
+# 319 satisfiable
+p cnf 3 4
+-1 2 0
+1 -2 -3 0
+1 -2 3 0
+2 3 0
+
+# 320 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 0
+-1 -2 -3 0
+-1 3 0
+
+# 321 satisfiable
+p cnf 3 4
+-1 2 0
+-1 2 -3 0
+-1 2 0
+1 2 3 0
+
+# 322 satisfiable
+p cnf 3 4
+-1 2 0
+-1 -2 0
+1 -2 3 0
+2 -3 0
+
+# 323 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 2 0
+1 0
+-1 -2 -3 0
+
+# 324 satisfiable
+p cnf 3 4
+-1 3 0
+1 -2 3 0
+-1 -2 -3 0
+-1 -3 0
+
+# 325 satisfiable
+p cnf 3 4
+1 2 0
+-1 2 -3 0
+1 -3 0
+-1 -2 -3 0
+
+# 326 satisfiable
+p cnf 3 4
+1 3 0
+1 -2 -3 0
+1 2 3 0
+1 -2 -3 0
+
+# 327 satisfiable
+p cnf 3 4
+-2 -3 0
+-1 -2 -3 0
+1 2 3 0
+-1 -3 0
+
+# 328 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 -2 3 0
+1 -2 -3 0
+1 2 3 0
+
+# 329 satisfiable
+p cnf 3 4
+1 -2 3 0
+-2 3 0
+2 3 0
+-1 -2 3 0
+
+# 330 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 2 3 0
+-3 0
+-2 -3 0
+
+# 331 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-1 2 -3 0
+-1 2 3 0
+1 -2 3 0
+
+# 332 satisfiable
+p cnf 3 4
+1 -2 0
+-1 -2 -3 0
+1 2 3 0
+1 -2 -3 0
+
+# 333 satisfiable
+p cnf 3 4
+-3 0
+2 -3 0
+-1 -2 -3 0
+1 -2 0
+
+# 334 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 3 0
+1 2 3 0
+2 0
+
+# 335 satisfiable
+p cnf 3 4
+-1 2 3 0
+2 0
+-3 0
+1 -2 -3 0
+
+# 336 satisfiable
+p cnf 3 4
+1 3 0
+-1 -2 3 0
+-1 -2 -3 0
+-1 -3 0
+
+# 337 satisfiable
+p cnf 3 4
+1 2 3 0
+1 2 3 0
+-1 -2 3 0
+1 2 -3 0
+
+# 338 satisfiable
+p cnf 3 4
+-2 0
+-2 -3 0
+-1 -3 0
+1 -3 0
+
+# 339 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-3 0
+-1 -3 0
+-1 3 0
+
+# 340 satisfiable
+p cnf 3 4
+2 -3 0
+-1 -2 -3 0
+-1 -2 3 0
+1 -2 -3 0
+
+# 341 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 2 -3 0
+1 2 0
+-1 -2 3 0
+
+# 342 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 2 -3 0
+1 2 3 0
+1 -2 0
+
+# 343 satisfiable
+p cnf 3 4
+1 3 0
+1 2 -3 0
+2 -3 0
+1 -2 -3 0
+
+# 344 satisfiable
+p cnf 3 4
+-1 0
+1 2 3 0
+-1 -2 -3 0
+1 -2 0
+
+# 345 satisfiable
+p cnf 3 4
+-1 2 0
+1 2 0
+1 -2 3 0
+1 2 3 0
+
+# 346 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-1 3 0
+-1 -2 0
+-1 -2 3 0
+
+# 347 satisfiable
+p cnf 3 4
+1 2 3 0
+1 2 3 0
+1 -2 3 0
+-1 -2 -3 0
+
+# 348 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 -2 3 0
+1 -2 0
+-1 2 3 0
+
+# 349 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 2 -3 0
+-1 -2 3 0
+-1 -2 -3 0
+
+# 350 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 -2 0
+1 2 0
+1 -2 -3 0
+
+# 351 satisfiable
+p cnf 3 4
+1 -3 0
+3 0
+1 2 3 0
+-1 -2 0
+
+# 352 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 -2 -3 0
+1 -2 0
+-2 -3 0
+
+# 353 satisfiable
+p cnf 3 4
+2 3 0
+-1 2 -3 0
+-1 2 0
+1 2 -3 0
+
+# 354 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 -2 0
+-1 2 0
+-1 -2 -3 0
+
+# 355 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-1 2 3 0
+1 2 -3 0
+1 -2 0
+
+# 356 satisfiable
+p cnf 3 4
+1 2 0
+2 0
+-1 -2 0
+-1 3 0
+
+# 357 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-1 -2 -3 0
+-1 -2 3 0
+-2 -3 0
+
+# 358 satisfiable
+p cnf 3 4
+1 -2 0
+-1 -3 0
+-1 2 3 0
+-1 -2 -3 0
+
+# 359 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 -2 0
+-1 2 -3 0
+1 2 0
+
+# 360 satisfiable
+p cnf 3 4
+-1 2 3 0
+-2 3 0
+-2 -3 0
+-1 2 3 0
+
+# 361 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-1 2 0
+1 2 -3 0
+-1 -3 0
+
+# 362 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 -2 3 0
+-1 -3 0
+1 -3 0
+
+# 363 satisfiable
+p cnf 3 4
+-1 2 0
+1 2 3 0
+1 -3 0
+1 -2 3 0
+
+# 364 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 2 -3 0
+-1 2 0
+-1 2 -3 0
+
+# 365 satisfiable
+p cnf 3 4
+1 2 3 0
+1 2 3 0
+1 2 -3 0
+-1 2 0
+
+# 366 satisfiable
+p cnf 3 4
+2 0
+-1 2 -3 0
+-1 -3 0
+-2 3 0
+
+# 367 satisfiable
+p cnf 3 4
+-1 3 0
+1 3 0
+1 -2 3 0
+-1 0
+
+# 368 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 2 3 0
+1 2 3 0
+1 2 0
+
+# 369 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 2 0
+-1 -2 -3 0
+-1 -2 3 0
+
+# 370 satisfiable
+p cnf 3 4
+1 2 3 0
+1 -2 -3 0
+-1 -2 -3 0
+1 -2 -3 0
+
+# 371 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 -2 -3 0
+-1 2 0
+-1 -2 3 0
+
+# 372 satisfiable
+p cnf 3 4
+1 2 3 0
+2 -3 0
+-1 -3 0
+2 -3 0
+
+# 373 satisfiable
+p cnf 3 4
+-1 0
+-1 -2 -3 0
+1 -2 3 0
+1 2 3 0
+
+# 374 satisfiable
+p cnf 3 4
+1 -3 0
+-2 3 0
+1 2 3 0
+-2 3 0
+
+# 375 satisfiable
+p cnf 3 4
+1 2 3 0
+1 2 -3 0
+-1 -2 -3 0
+-2 3 0
+
+# 376 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 2 3 0
+-1 -2 0
+-1 -2 0
+
+# 377 satisfiable
+p cnf 3 4
+-2 0
+-1 -3 0
+-1 -2 3 0
+1 2 3 0
+
+# 378 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-3 0
+1 2 3 0
+-1 -2 -3 0
+
+# 379 satisfiable
+p cnf 3 4
+-1 2 3 0
+2 -3 0
+1 -3 0
+-1 -2 3 0
+
+# 380 satisfiable
+p cnf 3 4
+1 -2 3 0
+2 -3 0
+2 3 0
+-1 3 0
+
+# 381 satisfiable
+p cnf 3 4
+1 -2 -3 0
+1 2 -3 0
+1 2 3 0
+1 2 -3 0
+
+# 382 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 -2 3 0
+1 -2 3 0
+1 2 3 0
+
+# 383 satisfiable
+p cnf 3 4
+1 3 0
+2 3 0
+1 2 -3 0
+2 -3 0
+
+# 384 satisfiable
+p cnf 3 4
+1 -2 -3 0
+1 2 -3 0
+1 -2 3 0
+-1 2 -3 0
+
+# 385 satisfiable
+p cnf 3 4
+1 -3 0
+1 -2 -3 0
+1 -2 0
+1 -2 3 0
+
+# 386 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 -2 3 0
+-1 -2 -3 0
+-1 -2 3 0
+
+# 387 satisfiable
+p cnf 3 4
+-2 -3 0
+-1 2 -3 0
+-1 -3 0
+2 3 0
+
+# 388 satisfiable
+p cnf 3 4
+-1 2 0
+1 0
+1 -3 0
+-1 2 -3 0
+
+# 389 satisfiable
+p cnf 3 4
+1 2 3 0
+2 0
+3 0
+2 -3 0
+
+# 390 satisfiable
+p cnf 3 4
+-1 -3 0
+1 -3 0
+1 0
+-1 -2 3 0
+
+# 391 satisfiable
+p cnf 3 4
+1 3 0
+1 -2 0
+1 3 0
+1 2 3 0
+
+# 392 unsatisfiable
+p cnf 3 4
+3 0
+-1 -2 0
+2 -3 0
+-3 0
+
+# 393 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 2 0
+-1 -2 -3 0
+1 0
+
+# 394 satisfiable
+p cnf 3 4
+1 2 -3 0
+-1 2 -3 0
+-2 3 0
+2 -3 0
+
+# 395 satisfiable
+p cnf 3 4
+-2 0
+-1 -2 3 0
+-1 2 -3 0
+-1 2 -3 0
+
+# 396 satisfiable
+p cnf 3 4
+1 2 0
+-1 -2 -3 0
+3 0
+1 -2 3 0
+
+# 397 satisfiable
+p cnf 3 4
+-1 -3 0
+-2 3 0
+1 -2 -3 0
+1 -2 -3 0
+
+# 398 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 -2 3 0
+-1 2 3 0
+-1 2 -3 0
+
+# 399 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-1 -2 -3 0
+2 3 0
+1 -3 0
+
+# 400 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 2 0
+1 0
+-2 -3 0
+
+# 401 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 -2 -3 0
+1 2 -3 0
+1 3 0
+
+# 402 satisfiable
+p cnf 3 4
+-1 -2 3 0
+2 0
+1 2 3 0
+1 -2 -3 0
+
+# 403 satisfiable
+p cnf 3 4
+2 3 0
+1 2 -3 0
+1 -2 3 0
+-1 2 -3 0
+
+# 404 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 2 3 0
+-1 2 -3 0
+1 2 -3 0
+
+# 405 satisfiable
+p cnf 3 4
+1 2 -3 0
+-1 -2 -3 0
+-1 2 -3 0
+-1 -2 -3 0
+
+# 406 satisfiable
+p cnf 3 4
+-2 -3 0
+1 2 3 0
+-1 3 0
+-2 3 0
+
+# 407 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 -2 -3 0
+2 3 0
+-1 3 0
+
+# 408 satisfiable
+p cnf 3 4
+2 3 0
+1 -3 0
+1 -3 0
+-2 3 0
+
+# 409 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 2 3 0
+1 -2 3 0
+1 -2 -3 0
+
+# 410 satisfiable
+p cnf 3 4
+2 3 0
+-1 2 -3 0
+1 2 3 0
+1 -2 3 0
+
+# 411 satisfiable
+p cnf 3 4
+1 3 0
+-1 -3 0
+-1 0
+-1 -2 -3 0
+
+# 412 satisfiable
+p cnf 3 4
+-2 -3 0
+1 3 0
+2 3 0
+1 0
+
+# 413 satisfiable
+p cnf 3 4
+-3 0
+1 -3 0
+-1 2 -3 0
+1 -2 3 0
+
+# 414 satisfiable
+p cnf 3 4
+1 2 0
+1 -2 -3 0
+2 0
+1 -2 -3 0
+
+# 415 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 -2 0
+1 3 0
+-1 2 3 0
+
+# 416 satisfiable
+p cnf 3 4
+-2 -3 0
+2 3 0
+1 -2 -3 0
+-1 -3 0
+
+# 417 satisfiable
+p cnf 3 4
+1 2 -3 0
+-1 2 -3 0
+-1 -2 -3 0
+1 2 0
+
+# 418 unsatisfiable
+p cnf 3 4
+1 3 0
+-2 0
+2 0
+1 2 -3 0
+
+# 419 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 -2 3 0
+1 -3 0
+-1 -2 3 0
+
+# 420 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-1 -3 0
+1 -2 3 0
+1 -2 3 0
+
+# 421 satisfiable
+p cnf 3 4
+-1 -3 0
+1 -2 0
+-2 -3 0
+-1 2 0
+
+# 422 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 -2 3 0
+2 -3 0
+-1 2 3 0
+
+# 423 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 0
+-1 2 -3 0
+-1 -2 3 0
+
+# 424 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 2 -3 0
+1 -2 -3 0
+2 0
+
+# 425 satisfiable
+p cnf 3 4
+1 0
+1 2 0
+-1 2 0
+1 3 0
+
+# 426 satisfiable
+p cnf 3 4
+-2 3 0
+-1 -2 -3 0
+1 -2 -3 0
+-1 -2 3 0
+
+# 427 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 3 0
+-2 -3 0
+-1 2 -3 0
+
+# 428 satisfiable
+p cnf 3 4
+1 2 0
+-1 -2 0
+2 3 0
+-3 0
+
+# 429 satisfiable
+p cnf 3 4
+1 2 3 0
+2 -3 0
+-2 3 0
+1 2 -3 0
+
+# 430 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 -2 -3 0
+-1 -2 0
+-1 2 -3 0
+
+# 431 satisfiable
+p cnf 3 4
+2 -3 0
+-1 2 3 0
+-1 -2 -3 0
+2 -3 0
+
+# 432 satisfiable
+p cnf 3 4
+1 3 0
+-2 3 0
+1 -2 3 0
+-1 2 -3 0
+
+# 433 satisfiable
+p cnf 3 4
+2 -3 0
+1 0
+-3 0
+1 -2 0
+
+# 434 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 2 0
+1 2 3 0
+-2 -3 0
+
+# 435 satisfiable
+p cnf 3 4
+1 -2 -3 0
+3 0
+-2 3 0
+-1 -2 -3 0
+
+# 436 satisfiable
+p cnf 3 4
+-1 -3 0
+-1 2 0
+1 -2 0
+-2 -3 0
+
+# 437 satisfiable
+p cnf 3 4
+-1 3 0
+1 -2 0
+1 -3 0
+-1 2 3 0
+
+# 438 satisfiable
+p cnf 3 4
+1 0
+1 -2 3 0
+-1 -2 -3 0
+1 2 -3 0
+
+# 439 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 2 -3 0
+-1 -2 3 0
+1 -2 0
+
+# 440 satisfiable
+p cnf 3 4
+1 3 0
+-3 0
+1 2 -3 0
+1 3 0
+
+# 441 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 2 -3 0
+2 0
+1 -2 3 0
+
+# 442 unsatisfiable
+p cnf 2 4
+2 0
+-1 -2 0
+-2 0
+-1 2 0
+
+# 443 satisfiable
+p cnf 3 4
+-2 0
+-1 -3 0
+-1 2 -3 0
+1 -3 0
+
+# 444 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 2 3 0
+1 -3 0
+-1 -2 3 0
+
+# 445 satisfiable
+p cnf 3 4
+2 -3 0
+2 0
+-1 -2 -3 0
+-1 2 3 0
+
+# 446 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 -2 -3 0
+-1 2 3 0
+2 3 0
+
+# 447 satisfiable
+p cnf 3 4
+-2 -3 0
+-1 3 0
+-2 3 0
+-1 -3 0
+
+# 448 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 2 3 0
+-1 -2 -3 0
+2 0
+
+# 449 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 -2 -3 0
+-1 -2 3 0
+1 -3 0
+
+# 450 satisfiable
+p cnf 3 4
+2 3 0
+2 3 0
+1 -2 -3 0
+-1 -2 3 0
+
+# 451 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 2 3 0
+1 -2 -3 0
+1 -2 3 0
+
+# 452 satisfiable
+p cnf 3 4
+1 2 -3 0
+2 -3 0
+1 2 -3 0
+1 3 0
+
+# 453 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 3 0
+1 2 3 0
+-2 0
+
+# 454 satisfiable
+p cnf 3 4
+2 0
+-1 2 -3 0
+1 2 3 0
+1 -2 -3 0
+
+# 455 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 2 -3 0
+-1 -2 3 0
+-1 -3 0
+
+# 456 satisfiable
+p cnf 3 4
+2 3 0
+-1 2 -3 0
+-1 -2 0
+-1 2 0
+
+# 457 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 2 -3 0
+-1 -2 3 0
+2 -3 0
+
+# 458 satisfiable
+p cnf 3 4
+-2 -3 0
+1 -2 3 0
+-1 2 3 0
+-1 2 -3 0
+
+# 459 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-1 -2 -3 0
+-1 2 0
+1 -2 0
+
+# 460 satisfiable
+p cnf 3 4
+-2 0
+1 2 -3 0
+-1 2 3 0
+1 -2 3 0
+
+# 461 satisfiable
+p cnf 3 4
+-1 3 0
+2 0
+2 0
+1 -2 -3 0
+
+# 462 satisfiable
+p cnf 3 4
+1 3 0
+1 2 0
+1 2 -3 0
+1 2 3 0
+
+# 463 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-2 0
+-1 -2 3 0
+-1 2 -3 0
+
+# 464 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 -2 -3 0
+-3 0
+-2 3 0
+
+# 465 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 -2 -3 0
+1 -3 0
+-1 2 3 0
+
+# 466 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 -2 3 0
+2 3 0
+1 -2 0
+
+# 467 satisfiable
+p cnf 3 4
+2 3 0
+1 -2 0
+1 2 3 0
+1 2 3 0
+
+# 468 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 3 0
+-1 2 3 0
+-1 -2 0
+
+# 469 satisfiable
+p cnf 3 4
+-2 3 0
+-3 0
+1 -2 0
+-2 -3 0
+
+# 470 satisfiable
+p cnf 3 4
+1 -3 0
+-2 -3 0
+1 -2 3 0
+2 0
+
+# 471 satisfiable
+p cnf 3 4
+1 2 -3 0
+-1 2 3 0
+1 -2 -3 0
+-1 2 0
+
+# 472 satisfiable
+p cnf 3 4
+1 -2 0
+-2 -3 0
+-1 -3 0
+1 3 0
+
+# 473 satisfiable
+p cnf 3 4
+1 2 3 0
+1 3 0
+1 -2 0
+1 2 0
+
+# 474 satisfiable
+p cnf 3 4
+1 3 0
+2 3 0
+-1 -2 3 0
+-1 3 0
+
+# 475 satisfiable
+p cnf 3 4
+-1 2 0
+1 2 3 0
+1 2 -3 0
+-1 -2 -3 0
+
+# 476 satisfiable
+p cnf 3 4
+-1 -2 0
+1 2 -3 0
+-1 2 0
+3 0
+
+# 477 satisfiable
+p cnf 3 4
+-1 3 0
+1 -2 0
+1 2 -3 0
+1 2 -3 0
+
+# 478 satisfiable
+p cnf 3 4
+1 2 3 0
+1 -2 -3 0
+-1 -2 0
+-1 -2 -3 0
+
+# 479 satisfiable
+p cnf 3 4
+1 2 0
+-1 -2 3 0
+1 -2 3 0
+3 0
+
+# 480 satisfiable
+p cnf 3 4
+2 0
+1 -2 3 0
+1 2 3 0
+1 2 -3 0
+
+# 481 satisfiable
+p cnf 3 4
+1 -3 0
+-1 3 0
+1 2 -3 0
+-3 0
+
+# 482 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 -3 0
+1 -2 3 0
+1 -2 3 0
+
+# 483 satisfiable
+p cnf 3 4
+-1 3 0
+-1 -2 3 0
+1 2 3 0
+1 2 -3 0
+
+# 484 satisfiable
+p cnf 3 4
+-1 3 0
+1 -3 0
+1 -2 0
+-1 -2 3 0
+
+# 485 satisfiable
+p cnf 3 4
+1 -3 0
+-1 2 -3 0
+-2 0
+1 2 -3 0
+
+# 486 satisfiable
+p cnf 3 4
+-2 -3 0
+2 3 0
+1 -2 -3 0
+2 3 0
+
+# 487 satisfiable
+p cnf 3 4
+2 3 0
+1 3 0
+-1 2 -3 0
+-2 3 0
+
+# 488 satisfiable
+p cnf 3 4
+1 -3 0
+1 3 0
+-1 -2 -3 0
+-1 3 0
+
+# 489 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 -2 3 0
+-1 2 0
+1 3 0
+
+# 490 satisfiable
+p cnf 3 4
+-2 3 0
+2 3 0
+-2 3 0
+1 2 3 0
+
+# 491 satisfiable
+p cnf 3 4
+2 3 0
+1 -2 -3 0
+-1 3 0
+-1 2 -3 0
+
+# 492 satisfiable
+p cnf 3 4
+1 2 -3 0
+-1 -2 3 0
+1 2 0
+1 -2 0
+
+# 493 satisfiable
+p cnf 3 4
+-1 2 3 0
+3 0
+1 2 -3 0
+-1 -3 0
+
+# 494 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 2 -3 0
+1 -2 0
+-1 -3 0
+
+# 495 satisfiable
+p cnf 3 4
+1 0
+-1 -2 3 0
+-1 -2 3 0
+1 -2 3 0
+
+# 496 satisfiable
+p cnf 3 4
+2 0
+-2 -3 0
+-1 -3 0
+-2 -3 0
+
+# 497 satisfiable
+p cnf 3 4
+1 -3 0
+-1 -2 0
+1 2 0
+1 2 0
+
+# 498 satisfiable
+p cnf 3 4
+-2 -3 0
+2 3 0
+1 2 -3 0
+1 -2 0
+
+# 499 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 2 3 0
+-1 3 0
+2 3 0
+
+# 500 satisfiable
+p cnf 3 4
+-2 3 0
+-1 2 3 0
+-1 2 3 0
+2 0
+
+# 501 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 -2 3 0
+1 -2 3 0
+1 -2 3 0
+
+# 502 satisfiable
+p cnf 3 4
+2 3 0
+1 2 3 0
+-1 3 0
+1 2 -3 0
+
+# 503 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 0
+1 -2 -3 0
+1 -3 0
+
+# 504 satisfiable
+p cnf 3 4
+-1 -2 3 0
+3 0
+1 -2 0
+1 2 3 0
+
+# 505 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 3 0
+2 3 0
+-2 3 0
+
+# 506 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 -2 3 0
+1 -2 -3 0
+-1 2 -3 0
+
+# 507 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 2 3 0
+-1 2 3 0
+-2 -3 0
+
+# 508 satisfiable
+p cnf 3 4
+1 -2 -3 0
+2 0
+-2 -3 0
+1 2 0
+
+# 509 satisfiable
+p cnf 3 4
+-2 -3 0
+1 2 0
+3 0
+-2 0
+
+# 510 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 2 3 0
+-1 2 -3 0
+1 2 -3 0
+
+# 511 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 2 -3 0
+1 -2 3 0
+2 -3 0
+
+# 512 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 -2 0
+1 -2 3 0
+2 3 0
+
+# 513 satisfiable
+p cnf 3 4
+-1 -3 0
+-1 0
+-1 2 3 0
+-1 -2 3 0
+
+# 514 satisfiable
+p cnf 3 4
+-1 0
+1 -3 0
+-1 -2 -3 0
+-1 -2 3 0
+
+# 515 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 -2 3 0
+-1 -3 0
+1 2 3 0
+
+# 516 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 2 3 0
+-1 -2 3 0
+-1 2 0
+
+# 517 satisfiable
+p cnf 3 4
+-1 2 0
+-1 -3 0
+-2 -3 0
+1 0
+
+# 518 satisfiable
+p cnf 3 4
+1 -3 0
+1 -2 -3 0
+1 -2 -3 0
+-1 2 -3 0
+
+# 519 satisfiable
+p cnf 3 4
+1 3 0
+-2 0
+1 -2 -3 0
+1 2 3 0
+
+# 520 satisfiable
+p cnf 3 4
+-1 3 0
+-1 -2 0
+-1 2 -3 0
+1 2 3 0
+
+# 521 satisfiable
+p cnf 3 4
+3 0
+2 0
+-1 -2 -3 0
+1 2 3 0
+
+# 522 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 2 -3 0
+-2 -3 0
+1 -2 3 0
+
+# 523 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 -2 -3 0
+1 2 3 0
+1 3 0
+
+# 524 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 0
+-1 -3 0
+-1 -2 0
+
+# 525 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 0
+1 3 0
+1 -2 0
+
+# 526 satisfiable
+p cnf 3 4
+1 -2 3 0
+2 3 0
+2 3 0
+-1 -2 0
+
+# 527 satisfiable
+p cnf 3 4
+-1 -3 0
+-3 0
+-1 -3 0
+1 2 0
+
+# 528 satisfiable
+p cnf 3 4
+-2 -3 0
+-2 0
+1 2 3 0
+-1 -3 0
+
+# 529 satisfiable
+p cnf 3 4
+-2 -3 0
+-1 -2 3 0
+-1 2 -3 0
+-1 -2 -3 0
+
+# 530 satisfiable
+p cnf 3 4
+-1 -2 0
+1 2 3 0
+-1 -2 -3 0
+-2 -3 0
+
+# 531 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 0
+1 2 -3 0
+1 -2 3 0
+
+# 532 satisfiable
+p cnf 3 4
+-1 2 0
+-2 -3 0
+-1 -2 -3 0
+1 3 0
+
+# 533 satisfiable
+p cnf 3 4
+2 -3 0
+-1 -3 0
+-1 -2 3 0
+1 3 0
+
+# 534 satisfiable
+p cnf 3 4
+1 -3 0
+-1 -2 0
+2 3 0
+1 -2 -3 0
+
+# 535 satisfiable
+p cnf 3 4
+1 2 0
+1 2 -3 0
+1 -2 3 0
+1 2 -3 0
+
+# 536 satisfiable
+p cnf 3 4
+-2 -3 0
+-1 -2 3 0
+-1 -2 0
+1 -2 -3 0
+
+# 537 satisfiable
+p cnf 3 4
+1 3 0
+-1 2 3 0
+1 -2 3 0
+1 -2 -3 0
+
+# 538 satisfiable
+p cnf 3 4
+1 -2 -3 0
+1 -2 3 0
+1 2 3 0
+-1 2 0
+
+# 539 satisfiable
+p cnf 3 4
+-1 2 0
+1 -2 3 0
+1 -2 0
+-1 3 0
+
+# 540 satisfiable
+p cnf 3 4
+-1 2 0
+1 2 3 0
+1 2 3 0
+1 -2 -3 0
+
+# 541 satisfiable
+p cnf 3 4
+3 0
+-1 2 -3 0
+1 -2 3 0
+-1 -2 3 0
+
+# 542 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 -2 3 0
+1 2 -3 0
+-1 3 0
+
+# 543 satisfiable
+p cnf 3 4
+1 -2 0
+1 -2 3 0
+1 -2 -3 0
+-1 -2 3 0
+
+# 544 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-2 0
+-2 3 0
+1 2 3 0
+
+# 545 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 2 0
+1 -3 0
+1 3 0
+
+# 546 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 -2 -3 0
+-1 -3 0
+1 2 3 0
+
+# 547 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 2 3 0
+-1 -3 0
+1 -2 -3 0
+
+# 548 satisfiable
+p cnf 3 4
+-1 3 0
+1 2 -3 0
+-1 -3 0
+-2 -3 0
+
+# 549 satisfiable
+p cnf 3 4
+1 -3 0
+-1 -2 -3 0
+2 3 0
+-1 -2 3 0
+
+# 550 satisfiable
+p cnf 3 4
+1 -2 0
+-1 2 3 0
+1 0
+1 -2 -3 0
+
+# 551 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 -2 3 0
+-1 2 -3 0
+-1 3 0
+
+# 552 satisfiable
+p cnf 3 4
+2 -3 0
+-1 -2 3 0
+-1 -2 -3 0
+1 -2 -3 0
+
+# 553 satisfiable
+p cnf 3 4
+-1 -3 0
+1 3 0
+-1 -2 -3 0
+1 2 -3 0
+
+# 554 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 -2 -3 0
+2 3 0
+1 -2 -3 0
+
+# 555 satisfiable
+p cnf 3 4
+-1 -3 0
+-1 -2 3 0
+-1 2 3 0
+-2 0
+
+# 556 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 -2 -3 0
+-2 0
+-1 2 3 0
+
+# 557 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-1 -2 3 0
+1 2 -3 0
+1 2 0
+
+# 558 satisfiable
+p cnf 3 4
+-2 0
+-2 3 0
+2 3 0
+-1 -2 0
+
+# 559 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 2 3 0
+-1 2 -3 0
+1 -2 3 0
+
+# 560 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-1 2 3 0
+-1 0
+1 2 -3 0
+
+# 561 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 2 0
+-1 -2 -3 0
+-1 2 -3 0
+
+# 562 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-2 0
+-1 2 3 0
+-2 -3 0
+
+# 563 satisfiable
+p cnf 3 4
+2 3 0
+-1 -2 -3 0
+-1 2 -3 0
+-2 -3 0
+
+# 564 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 2 -3 0
+1 -2 3 0
+1 2 -3 0
+
+# 565 satisfiable
+p cnf 3 4
+-1 -2 0
+-2 0
+-1 2 3 0
+-1 2 -3 0
+
+# 566 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 2 3 0
+1 2 3 0
+-1 -2 -3 0
+
+# 567 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 -2 3 0
+-1 2 3 0
+1 2 -3 0
+
+# 568 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-1 -2 3 0
+-2 -3 0
+1 2 3 0
+
+# 569 satisfiable
+p cnf 3 4
+1 -2 0
+-1 2 3 0
+-2 -3 0
+1 3 0
+
+# 570 satisfiable
+p cnf 3 4
+-1 -3 0
+1 2 3 0
+-1 -2 0
+-1 -2 0
+
+# 571 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 2 3 0
+1 -2 3 0
+1 -2 -3 0
+
+# 572 satisfiable
+p cnf 3 4
+1 -2 -3 0
+2 0
+1 2 -3 0
+1 -2 -3 0
+
+# 573 satisfiable
+p cnf 3 4
+1 2 3 0
+1 -3 0
+1 -3 0
+-1 2 3 0
+
+# 574 satisfiable
+p cnf 3 4
+1 2 0
+-3 0
+1 -2 3 0
+-1 -3 0
+
+# 575 satisfiable
+p cnf 3 4
+1 0
+-1 -2 0
+1 -2 -3 0
+-1 -2 0
+
+# 576 satisfiable
+p cnf 3 4
+2 3 0
+1 -3 0
+1 2 3 0
+-1 -2 3 0
+
+# 577 satisfiable
+p cnf 3 4
+2 3 0
+2 0
+1 -2 0
+-1 -2 3 0
+
+# 578 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-1 2 3 0
+1 0
+1 -2 0
+
+# 579 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 2 0
+1 2 0
+-2 -3 0
+
+# 580 satisfiable
+p cnf 3 4
+1 2 0
+-1 2 3 0
+1 2 3 0
+1 -2 -3 0
+
+# 581 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-3 0
+2 -3 0
+-2 0
+
+# 582 satisfiable
+p cnf 3 4
+1 3 0
+-1 2 0
+1 2 -3 0
+-1 3 0
+
+# 583 satisfiable
+p cnf 3 4
+-1 -2 0
+-1 0
+1 -2 -3 0
+2 0
+
+# 584 satisfiable
+p cnf 3 4
+-2 -3 0
+1 -3 0
+-1 2 3 0
+-1 -2 3 0
+
+# 585 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-2 -3 0
+1 2 -3 0
+-1 -2 3 0
+
+# 586 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 2 3 0
+1 2 -3 0
+-2 3 0
+
+# 587 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 -2 3 0
+2 -3 0
+-3 0
+
+# 588 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 -3 0
+2 0
+-1 2 3 0
+
+# 589 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 2 -3 0
+1 -2 3 0
+-1 2 3 0
+
+# 590 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 -2 3 0
+2 0
+2 0
+
+# 591 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 3 0
+1 -3 0
+1 2 -3 0
+
+# 592 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 -2 -3 0
+2 3 0
+1 -2 -3 0
+
+# 593 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 -2 -3 0
+-1 -2 -3 0
+-1 -2 -3 0
+
+# 594 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-3 0
+1 2 3 0
+1 -2 3 0
+
+# 595 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 -3 0
+2 -3 0
+1 -2 3 0
+
+# 596 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-1 -3 0
+2 -3 0
+1 -2 0
+
+# 597 satisfiable
+p cnf 3 4
+1 -2 -3 0
+1 -3 0
+1 -2 -3 0
+1 -2 -3 0
+
+# 598 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 -2 0
+-1 2 -3 0
+1 2 -3 0
+
+# 599 satisfiable
+p cnf 3 4
+1 2 3 0
+1 -2 -3 0
+1 -2 0
+1 -2 3 0
+
+# 600 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 2 -3 0
+1 2 3 0
+-1 -2 -3 0
+
+# 601 satisfiable
+p cnf 3 4
+1 -2 0
+-2 3 0
+3 0
+-1 -2 0
+
+# 602 satisfiable
+p cnf 3 4
+-1 3 0
+1 2 3 0
+1 2 -3 0
+-1 -2 0
+
+# 603 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-2 0
+-1 -2 3 0
+-1 -3 0
+
+# 604 satisfiable
+p cnf 3 4
+-1 2 -3 0
+2 3 0
+-1 2 3 0
+-1 2 -3 0
+
+# 605 satisfiable
+p cnf 3 4
+1 3 0
+1 2 -3 0
+-1 -2 -3 0
+-1 2 -3 0
+
+# 606 satisfiable
+p cnf 3 4
+1 -2 0
+-1 2 3 0
+-1 -2 -3 0
+-1 -2 -3 0
+
+# 607 satisfiable
+p cnf 3 4
+3 0
+1 -2 -3 0
+1 2 3 0
+-1 2 -3 0
+
+# 608 satisfiable
+p cnf 3 4
+-2 -3 0
+-1 -2 -3 0
+-1 2 3 0
+-1 -2 -3 0
+
+# 609 satisfiable
+p cnf 3 4
+3 0
+1 -2 3 0
+-1 -2 0
+-1 -2 0
+
+# 610 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 3 0
+-1 2 -3 0
+-2 0
+
+# 611 satisfiable
+p cnf 3 4
+1 -3 0
+1 2 0
+-1 2 3 0
+1 3 0
+
+# 612 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 2 3 0
+1 2 -3 0
+1 3 0
+
+# 613 satisfiable
+p cnf 3 4
+-2 3 0
+1 -2 -3 0
+-1 -2 0
+-1 0
+
+# 614 satisfiable
+p cnf 3 4
+-1 -3 0
+2 3 0
+1 -2 0
+-1 2 -3 0
+
+# 615 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 -2 -3 0
+-1 2 0
+1 2 -3 0
+
+# 616 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 2 3 0
+-2 0
+2 3 0
+
+# 617 satisfiable
+p cnf 3 4
+-1 2 -3 0
+2 -3 0
+1 -2 3 0
+-2 3 0
+
+# 618 satisfiable
+p cnf 3 4
+-1 3 0
+-1 2 3 0
+-1 2 0
+1 -2 -3 0
+
+# 619 satisfiable
+p cnf 3 4
+-2 3 0
+-3 0
+-1 -2 3 0
+-1 2 -3 0
+
+# 620 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 -2 -3 0
+1 -2 3 0
+3 0
+
+# 621 satisfiable
+p cnf 3 4
+-1 -3 0
+2 0
+-1 -2 3 0
+-2 3 0
+
+# 622 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+2 0
+-2 3 0
+1 3 0
+
+# 623 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 -2 0
+1 3 0
+2 3 0
+
+# 624 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 -2 3 0
+-1 -2 -3 0
+1 -2 0
+
+# 625 satisfiable
+p cnf 3 4
+-2 3 0
+-1 2 -3 0
+-2 3 0
+2 -3 0
+
+# 626 satisfiable
+p cnf 3 4
+-1 -3 0
+-1 2 -3 0
+1 2 -3 0
+1 -2 3 0
+
+# 627 satisfiable
+p cnf 3 4
+1 2 3 0
+1 -2 3 0
+1 -2 0
+-3 0
+
+# 628 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 2 0
+1 2 3 0
+-3 0
+
+# 629 satisfiable
+p cnf 3 4
+-1 2 3 0
+3 0
+1 3 0
+3 0
+
+# 630 satisfiable
+p cnf 3 4
+-2 -3 0
+1 0
+-1 -2 3 0
+1 3 0
+
+# 631 satisfiable
+p cnf 3 4
+1 -3 0
+-1 2 -3 0
+1 2 -3 0
+-1 -2 3 0
+
+# 632 satisfiable
+p cnf 3 4
+1 2 3 0
+1 -3 0
+-1 -2 -3 0
+2 3 0
+
+# 633 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 -2 3 0
+-1 3 0
+-1 2 0
+
+# 634 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 -2 -3 0
+1 -2 3 0
+-1 -2 -3 0
+
+# 635 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 -2 3 0
+-1 -2 3 0
+-2 3 0
+
+# 636 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 2 3 0
+-1 0
+-2 3 0
+
+# 637 satisfiable
+p cnf 3 4
+-2 -3 0
+1 2 3 0
+-1 2 3 0
+1 3 0
+
+# 638 satisfiable
+p cnf 3 4
+-1 2 0
+-2 3 0
+1 3 0
+-1 2 -3 0
+
+# 639 satisfiable
+p cnf 3 4
+1 -2 -3 0
+1 -2 3 0
+2 0
+-1 2 -3 0
+
+# 640 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 -2 -3 0
+-1 -2 3 0
+1 2 -3 0
+
+# 641 satisfiable
+p cnf 3 4
+-1 -3 0
+-1 -2 0
+1 3 0
+-2 0
+
+# 642 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 2 -3 0
+-2 3 0
+-2 -3 0
+
+# 643 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 -2 0
+-1 2 0
+-1 2 3 0
+
+# 644 satisfiable
+p cnf 3 4
+2 3 0
+-1 -2 0
+1 -2 3 0
+1 -2 3 0
+
+# 645 satisfiable
+p cnf 3 4
+-1 2 3 0
+2 3 0
+1 2 -3 0
+-1 2 3 0
+
+# 646 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 3 0
+1 -2 0
+-1 -2 3 0
+
+# 647 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 -2 0
+1 2 3 0
+2 0
+
+# 648 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 -2 -3 0
+1 2 0
+-1 -2 -3 0
+
+# 649 satisfiable
+p cnf 3 4
+1 2 3 0
+1 2 0
+1 3 0
+1 -2 -3 0
+
+# 650 satisfiable
+p cnf 3 4
+-1 2 3 0
+2 3 0
+-1 2 3 0
+-1 -2 0
+
+# 651 satisfiable
+p cnf 3 4
+1 0
+-1 2 3 0
+-1 3 0
+-2 0
+
+# 652 satisfiable
+p cnf 3 4
+1 3 0
+1 2 -3 0
+-2 3 0
+-1 -2 -3 0
+
+# 653 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 2 3 0
+-1 2 3 0
+-1 2 -3 0
+
+# 654 satisfiable
+p cnf 3 4
+-2 3 0
+-1 -2 -3 0
+1 2 3 0
+2 3 0
+
+# 655 satisfiable
+p cnf 3 4
+-2 3 0
+1 -2 -3 0
+1 2 -3 0
+-1 2 -3 0
+
+# 656 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 -2 0
+2 -3 0
+1 -2 3 0
+
+# 657 satisfiable
+p cnf 3 4
+-2 3 0
+1 2 0
+1 2 -3 0
+-1 -2 3 0
+
+# 658 satisfiable
+p cnf 3 4
+-1 -2 0
+-1 -2 3 0
+-1 -2 3 0
+1 2 3 0
+
+# 659 satisfiable
+p cnf 3 4
+-2 -3 0
+1 -2 3 0
+-1 2 0
+-1 -2 0
+
+# 660 satisfiable
+p cnf 3 4
+2 0
+2 3 0
+2 3 0
+1 2 -3 0
+
+# 661 satisfiable
+p cnf 3 4
+-1 0
+2 3 0
+1 -2 -3 0
+-1 -2 3 0
+
+# 662 satisfiable
+p cnf 3 4
+-1 -2 0
+-1 2 0
+-1 2 -3 0
+1 -2 -3 0
+
+# 663 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 -2 3 0
+1 -2 3 0
+2 -3 0
+
+# 664 satisfiable
+p cnf 3 4
+1 -2 -3 0
+1 2 0
+1 -2 -3 0
+-2 -3 0
+
+# 665 satisfiable
+p cnf 3 4
+2 3 0
+-1 2 3 0
+-1 2 -3 0
+1 -2 -3 0
+
+# 666 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 2 3 0
+1 -2 -3 0
+-1 -2 -3 0
+
+# 667 satisfiable
+p cnf 3 4
+1 2 -3 0
+-1 2 -3 0
+-1 2 3 0
+-1 -2 -3 0
+
+# 668 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 -2 -3 0
+1 2 -3 0
+1 2 -3 0
+
+# 669 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 -2 -3 0
+1 2 0
+-1 2 -3 0
+
+# 670 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 -3 0
+1 2 3 0
+2 -3 0
+
+# 671 satisfiable
+p cnf 3 4
+-3 0
+1 -2 -3 0
+-1 -2 -3 0
+-1 -2 3 0
+
+# 672 satisfiable
+p cnf 3 4
+2 3 0
+-1 -2 0
+-1 -3 0
+1 2 -3 0
+
+# 673 satisfiable
+p cnf 3 4
+1 -3 0
+-3 0
+-1 2 0
+-1 2 3 0
+
+# 674 satisfiable
+p cnf 3 4
+1 2 0
+1 -2 3 0
+1 2 0
+1 -2 3 0
+
+# 675 satisfiable
+p cnf 3 4
+-1 2 3 0
+-2 3 0
+-1 2 3 0
+-1 2 -3 0
+
+# 676 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 3 0
+1 -2 -3 0
+-1 -2 0
+
+# 677 satisfiable
+p cnf 3 4
+2 -3 0
+1 0
+-1 2 -3 0
+-1 2 3 0
+
+# 678 satisfiable
+p cnf 3 4
+1 -3 0
+2 -3 0
+-1 -2 3 0
+-1 -2 0
+
+# 679 satisfiable
+p cnf 3 4
+-1 2 0
+2 -3 0
+-1 -3 0
+-1 2 0
+
+# 680 satisfiable
+p cnf 3 4
+-1 -2 0
+1 3 0
+1 -2 3 0
+1 2 3 0
+
+# 681 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 2 3 0
+1 -2 3 0
+1 -3 0
+
+# 682 satisfiable
+p cnf 3 4
+-1 -2 0
+1 2 3 0
+1 -2 -3 0
+1 -3 0
+
+# 683 satisfiable
+p cnf 3 4
+-2 0
+-1 -2 3 0
+-1 -2 -3 0
+1 2 3 0
+
+# 684 satisfiable
+p cnf 3 4
+1 2 -3 0
+-1 2 3 0
+1 3 0
+-1 2 3 0
+
+# 685 satisfiable
+p cnf 3 4
+-1 2 3 0
+2 3 0
+-1 -3 0
+-1 2 0
+
+# 686 satisfiable
+p cnf 3 4
+1 -2 0
+1 2 3 0
+-1 2 -3 0
+-2 -3 0
+
+# 687 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 2 -3 0
+1 3 0
+2 3 0
+
+# 688 satisfiable
+p cnf 3 4
+1 -2 -3 0
+2 -3 0
+-1 2 -3 0
+-1 2 0
+
+# 689 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 -2 -3 0
+1 2 3 0
+-1 2 -3 0
+
+# 690 satisfiable
+p cnf 3 4
+-1 3 0
+2 -3 0
+-1 2 3 0
+-1 -2 -3 0
+
+# 691 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-2 3 0
+-1 2 0
+-1 -2 -3 0
+
+# 692 satisfiable
+p cnf 3 4
+-1 -2 0
+2 0
+1 -2 3 0
+2 3 0
+
+# 693 satisfiable
+p cnf 3 4
+-2 3 0
+1 2 -3 0
+-2 0
+-1 -2 -3 0
+
+# 694 satisfiable
+p cnf 3 4
+-1 -3 0
+-1 -2 -3 0
+-1 2 3 0
+2 3 0
+
+# 695 satisfiable
+p cnf 3 4
+2 3 0
+1 2 3 0
+1 -3 0
+-1 3 0
+
+# 696 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 2 0
+1 -2 -3 0
+-3 0
+
+# 697 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 -2 3 0
+-1 2 0
+1 3 0
+
+# 698 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 -3 0
+-1 2 -3 0
+-1 2 0
+
+# 699 satisfiable
+p cnf 3 4
+-2 -3 0
+1 2 3 0
+1 -3 0
+-2 0
+
+# 700 satisfiable
+p cnf 3 4
+2 3 0
+2 -3 0
+1 2 -3 0
+1 2 0
+
+# 701 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 2 -3 0
+-1 0
+-2 3 0
+
+# 702 satisfiable
+p cnf 3 4
+-1 3 0
+1 2 -3 0
+3 0
+-2 -3 0
+
+# 703 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 2 -3 0
+-2 -3 0
+-1 3 0
+
+# 704 satisfiable
+p cnf 3 4
+1 3 0
+-1 2 3 0
+-1 -2 3 0
+2 3 0
+
+# 705 satisfiable
+p cnf 3 4
+-2 3 0
+-1 0
+1 2 0
+1 -2 3 0
+
+# 706 satisfiable
+p cnf 3 4
+-2 -3 0
+-1 2 -3 0
+-1 -2 0
+1 -2 -3 0
+
+# 707 satisfiable
+p cnf 3 4
+-1 2 0
+2 -3 0
+-1 2 0
+1 -2 -3 0
+
+# 708 satisfiable
+p cnf 3 4
+1 2 3 0
+1 -2 -3 0
+-1 -2 3 0
+1 -2 -3 0
+
+# 709 satisfiable
+p cnf 3 4
+1 2 -3 0
+-1 2 -3 0
+1 -2 3 0
+1 -2 3 0
+
+# 710 satisfiable
+p cnf 3 4
+-2 0
+1 2 3 0
+1 -2 -3 0
+1 -2 -3 0
+
+# 711 satisfiable
+p cnf 3 4
+2 3 0
+-1 2 3 0
+1 2 -3 0
+1 -2 0
+
+# 712 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 -3 0
+1 -2 3 0
+-1 2 0
+
+# 713 satisfiable
+p cnf 3 4
+1 -3 0
+1 2 3 0
+1 2 3 0
+1 2 -3 0
+
+# 714 satisfiable
+p cnf 3 4
+-1 -3 0
+-1 -2 -3 0
+2 3 0
+-1 -3 0
+
+# 715 satisfiable
+p cnf 3 4
+1 -2 -3 0
+1 2 -3 0
+1 -2 3 0
+-1 2 3 0
+
+# 716 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-2 3 0
+1 2 0
+-2 -3 0
+
+# 717 satisfiable
+p cnf 3 4
+-1 3 0
+-1 2 0
+-1 0
+1 -2 3 0
+
+# 718 satisfiable
+p cnf 3 4
+-1 -2 0
+-1 -2 3 0
+1 3 0
+-1 2 -3 0
+
+# 719 satisfiable
+p cnf 3 4
+1 2 0
+1 -2 3 0
+1 2 3 0
+1 -2 -3 0
+
+# 720 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 -2 -3 0
+-2 -3 0
+-1 2 3 0
+
+# 721 satisfiable
+p cnf 3 4
+1 2 -3 0
+-1 2 -3 0
+2 -3 0
+-1 -2 3 0
+
+# 722 satisfiable
+p cnf 3 4
+-1 2 0
+-1 -2 -3 0
+-1 3 0
+1 -3 0
+
+# 723 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 -2 -3 0
+1 2 0
+-1 2 -3 0
+
+# 724 satisfiable
+p cnf 3 4
+1 3 0
+-2 -3 0
+1 -2 3 0
+1 -2 0
+
+# 725 satisfiable
+p cnf 3 4
+-1 -3 0
+-1 -2 3 0
+-2 3 0
+-1 2 -3 0
+
+# 726 satisfiable
+p cnf 3 4
+-1 3 0
+2 -3 0
+1 3 0
+1 2 3 0
+
+# 727 satisfiable
+p cnf 3 4
+-1 2 0
+1 -2 3 0
+1 0
+-1 2 -3 0
+
+# 728 satisfiable
+p cnf 3 4
+1 -2 -3 0
+1 2 3 0
+-1 -3 0
+1 -2 3 0
+
+# 729 satisfiable
+p cnf 3 4
+-1 -2 0
+-1 0
+1 2 3 0
+-1 -2 -3 0
+
+# 730 satisfiable
+p cnf 3 4
+-1 -3 0
+1 2 -3 0
+-1 2 3 0
+-1 -2 0
+
+# 731 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 2 0
+-1 -2 3 0
+1 -3 0
+
+# 732 satisfiable
+p cnf 3 4
+1 3 0
+1 -2 -3 0
+1 -2 3 0
+-2 -3 0
+
+# 733 satisfiable
+p cnf 3 4
+1 -2 0
+1 2 -3 0
+1 -2 -3 0
+-1 -3 0
+
+# 734 satisfiable
+p cnf 3 4
+-1 -2 0
+1 0
+1 3 0
+1 2 3 0
+
+# 735 satisfiable
+p cnf 3 4
+1 2 0
+-1 -2 -3 0
+2 0
+1 2 3 0
+
+# 736 satisfiable
+p cnf 3 4
+1 2 0
+1 2 -3 0
+1 2 -3 0
+2 0
+
+# 737 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 -2 3 0
+1 -3 0
+-3 0
+
+# 738 satisfiable
+p cnf 3 4
+1 -2 -3 0
+1 2 3 0
+1 2 3 0
+1 2 -3 0
+
+# 739 satisfiable
+p cnf 3 4
+1 -2 -3 0
+2 0
+1 2 3 0
+1 2 0
+
+# 740 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 3 0
+1 2 0
+1 -2 -3 0
+
+# 741 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 -2 3 0
+1 2 3 0
+-1 -2 -3 0
+
+# 742 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 0
+-1 -3 0
+-2 3 0
+
+# 743 satisfiable
+p cnf 3 4
+-2 -3 0
+3 0
+1 -3 0
+1 3 0
+
+# 744 satisfiable
+p cnf 3 4
+-1 3 0
+-1 2 -3 0
+1 -2 0
+-1 -3 0
+
+# 745 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 2 -3 0
+1 -2 0
+1 2 3 0
+
+# 746 satisfiable
+p cnf 3 4
+1 3 0
+-3 0
+-1 -2 -3 0
+1 -2 -3 0
+
+# 747 satisfiable
+p cnf 3 4
+2 -3 0
+1 2 -3 0
+-1 -2 -3 0
+-2 -3 0
+
+# 748 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 -2 3 0
+1 -2 3 0
+1 2 -3 0
+
+# 749 satisfiable
+p cnf 3 4
+-1 -3 0
+-2 -3 0
+1 -3 0
+-1 -2 3 0
+
+# 750 satisfiable
+p cnf 3 4
+-2 -3 0
+-1 -2 -3 0
+1 2 -3 0
+2 0
+
+# 751 satisfiable
+p cnf 3 4
+1 3 0
+2 3 0
+2 3 0
+-1 3 0
+
+# 752 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-2 3 0
+-1 -2 3 0
+1 0
+
+# 753 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 2 3 0
+1 2 3 0
+1 2 3 0
+
+# 754 satisfiable
+p cnf 3 4
+1 2 -3 0
+-1 -2 0
+1 -2 -3 0
+-1 -2 -3 0
+
+# 755 satisfiable
+p cnf 3 4
+1 2 3 0
+2 3 0
+-1 -2 -3 0
+1 3 0
+
+# 756 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 2 3 0
+1 -2 0
+-1 0
+
+# 757 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 2 3 0
+1 2 3 0
+2 3 0
+
+# 758 satisfiable
+p cnf 3 4
+3 0
+1 -2 3 0
+-1 -3 0
+1 -2 3 0
+
+# 759 satisfiable
+p cnf 3 4
+1 -2 3 0
+-2 3 0
+1 2 -3 0
+-1 2 3 0
+
+# 760 satisfiable
+p cnf 3 4
+2 3 0
+-1 -2 3 0
+-1 3 0
+1 -2 -3 0
+
+# 761 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-2 3 0
+1 -2 -3 0
+1 2 3 0
+
+# 762 satisfiable
+p cnf 3 4
+2 -3 0
+2 3 0
+2 0
+1 -2 -3 0
+
+# 763 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-1 -3 0
+-1 2 -3 0
+-1 2 -3 0
+
+# 764 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 3 0
+1 2 3 0
+-1 2 3 0
+
+# 765 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 -2 3 0
+-1 -3 0
+-1 2 0
+
+# 766 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 -3 0
+1 -2 0
+-2 3 0
+
+# 767 satisfiable
+p cnf 3 4
+-2 3 0
+-2 3 0
+-1 2 3 0
+1 3 0
+
+# 768 satisfiable
+p cnf 3 4
+-1 -2 0
+-1 2 -3 0
+2 3 0
+-1 2 -3 0
+
+# 769 satisfiable
+p cnf 3 4
+1 3 0
+-1 2 -3 0
+-1 3 0
+-1 3 0
+
+# 770 satisfiable
+p cnf 3 4
+2 3 0
+1 2 -3 0
+-1 -2 3 0
+-1 2 -3 0
+
+# 771 satisfiable
+p cnf 3 4
+1 2 0
+1 2 3 0
+1 2 0
+-1 2 -3 0
+
+# 772 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 2 -3 0
+1 -2 -3 0
+-1 2 3 0
+
+# 773 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 -2 0
+1 -2 3 0
+1 2 -3 0
+
+# 774 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 2 0
+-1 -2 0
+-1 2 3 0
+
+# 775 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 -2 3 0
+-1 -2 3 0
+-1 -2 3 0
+
+# 776 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 -2 0
+1 2 -3 0
+1 2 3 0
+
+# 777 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 -2 3 0
+1 -2 3 0
+1 3 0
+
+# 778 satisfiable
+p cnf 3 4
+-2 3 0
+-1 -2 -3 0
+1 0
+1 2 3 0
+
+# 779 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 -2 0
+-2 0
+-1 -2 -3 0
+
+# 780 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 -2 -3 0
+2 3 0
+-1 -3 0
+
+# 781 satisfiable
+p cnf 3 4
+-1 2 0
+-1 -3 0
+1 3 0
+-1 2 -3 0
+
+# 782 satisfiable
+p cnf 3 4
+-1 -2 3 0
+3 0
+-1 -2 0
+1 -2 3 0
+
+# 783 satisfiable
+p cnf 3 4
+-1 2 0
+-1 -3 0
+1 2 3 0
+1 2 3 0
+
+# 784 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 -2 0
+1 -2 -3 0
+-1 -2 3 0
+
+# 785 satisfiable
+p cnf 3 4
+-1 -2 0
+1 2 3 0
+-1 2 -3 0
+2 -3 0
+
+# 786 satisfiable
+p cnf 3 4
+-1 2 0
+1 -2 -3 0
+1 2 0
+1 2 3 0
+
+# 787 satisfiable
+p cnf 3 4
+-1 2 3 0
+2 -3 0
+-1 2 3 0
+1 2 3 0
+
+# 788 satisfiable
+p cnf 3 4
+-1 2 0
+2 3 0
+-1 -2 -3 0
+-2 -3 0
+
+# 789 satisfiable
+p cnf 3 4
+1 -2 0
+-1 -2 -3 0
+1 0
+1 2 -3 0
+
+# 790 satisfiable
+p cnf 3 4
+1 -2 0
+-1 2 -3 0
+1 2 3 0
+1 2 -3 0
+
+# 791 satisfiable
+p cnf 3 4
+1 2 0
+-1 -2 0
+-1 -3 0
+2 3 0
+
+# 792 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 2 3 0
+1 3 0
+-1 -3 0
+
+# 793 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 -3 0
+1 -2 3 0
+1 2 -3 0
+
+# 794 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 2 -3 0
+-1 2 3 0
+-1 2 0
+
+# 795 satisfiable
+p cnf 3 4
+-1 3 0
+1 -2 -3 0
+-1 -2 3 0
+-2 0
+
+# 796 satisfiable
+p cnf 3 4
+1 2 3 0
+-2 -3 0
+-1 -2 -3 0
+1 -2 3 0
+
+# 797 satisfiable
+p cnf 3 4
+-1 -3 0
+-1 0
+1 2 -3 0
+2 3 0
+
+# 798 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 -2 -3 0
+-1 2 3 0
+1 2 3 0
+
+# 799 satisfiable
+p cnf 3 4
+1 2 3 0
+-3 0
+1 -2 -3 0
+-1 2 -3 0
+
+# 800 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 2 3 0
+-1 -2 3 0
+1 2 0
+
+# 801 satisfiable
+p cnf 3 4
+-2 -3 0
+1 2 3 0
+-1 -2 0
+-1 2 3 0
+
+# 802 satisfiable
+p cnf 3 4
+1 -2 0
+-1 -2 3 0
+-2 3 0
+3 0
+
+# 803 satisfiable
+p cnf 3 4
+1 2 0
+1 2 3 0
+-1 2 3 0
+-3 0
+
+# 804 satisfiable
+p cnf 3 4
+1 2 -3 0
+2 3 0
+1 -2 -3 0
+-1 -2 -3 0
+
+# 805 satisfiable
+p cnf 3 4
+1 2 0
+-1 2 3 0
+1 0
+-2 0
+
+# 806 satisfiable
+p cnf 3 4
+1 -2 3 0
+-2 0
+1 -3 0
+-1 -2 -3 0
+
+# 807 satisfiable
+p cnf 3 4
+-1 2 0
+-1 -2 0
+-3 0
+-2 3 0
+
+# 808 satisfiable
+p cnf 3 4
+-1 2 -3 0
+2 0
+-1 2 0
+-1 2 3 0
+
+# 809 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 -2 3 0
+-1 -2 3 0
+-3 0
+
+# 810 satisfiable
+p cnf 3 4
+1 2 -3 0
+-1 2 3 0
+1 2 -3 0
+1 2 3 0
+
+# 811 satisfiable
+p cnf 3 4
+1 2 -3 0
+-1 -2 0
+-1 2 0
+-1 -2 -3 0
+
+# 812 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 -2 3 0
+-1 -2 -3 0
+-1 -2 3 0
+
+# 813 satisfiable
+p cnf 3 4
+-1 2 0
+-1 -2 -3 0
+-1 0
+-1 2 -3 0
+
+# 814 satisfiable
+p cnf 3 4
+-2 -3 0
+-1 2 3 0
+1 2 3 0
+-1 -2 3 0
+
+# 815 satisfiable
+p cnf 3 4
+1 2 -3 0
+-2 3 0
+-1 2 0
+1 2 0
+
+# 816 satisfiable
+p cnf 3 4
+1 2 -3 0
+-1 -2 -3 0
+1 -3 0
+-1 -3 0
+
+# 817 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 2 3 0
+1 2 -3 0
+1 -2 -3 0
+
+# 818 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-1 2 0
+-1 3 0
+1 3 0
+
+# 819 satisfiable
+p cnf 3 4
+-1 3 0
+3 0
+-2 3 0
+-1 2 3 0
+
+# 820 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 2 -3 0
+-2 -3 0
+1 2 -3 0
+
+# 821 satisfiable
+p cnf 3 4
+1 2 -3 0
+-1 -2 -3 0
+1 2 -3 0
+2 0
+
+# 822 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 -2 -3 0
+1 0
+2 -3 0
+
+# 823 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 2 0
+1 -2 -3 0
+2 -3 0
+
+# 824 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-2 -3 0
+-1 -2 -3 0
+1 -2 3 0
+
+# 825 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 3 0
+1 -2 -3 0
+-1 3 0
+
+# 826 satisfiable
+p cnf 3 4
+-1 -2 0
+1 -2 3 0
+-3 0
+-2 0
+
+# 827 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+2 -3 0
+2 -3 0
+1 2 -3 0
+
+# 828 satisfiable
+p cnf 3 4
+-2 -3 0
+1 -2 0
+1 -2 -3 0
+2 3 0
+
+# 829 satisfiable
+p cnf 3 4
+1 -2 0
+1 2 3 0
+-2 3 0
+1 2 -3 0
+
+# 830 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 2 -3 0
+-1 -2 3 0
+3 0
+
+# 831 satisfiable
+p cnf 3 4
+1 -2 0
+1 2 3 0
+-1 -2 3 0
+1 2 3 0
+
+# 832 satisfiable
+p cnf 3 4
+1 -3 0
+-1 -2 -3 0
+-1 3 0
+1 -2 3 0
+
+# 833 satisfiable
+p cnf 3 4
+-2 3 0
+-1 2 0
+-1 -2 -3 0
+1 -2 -3 0
+
+# 834 satisfiable
+p cnf 3 4
+1 -2 0
+2 -3 0
+2 -3 0
+-1 2 -3 0
+
+# 835 satisfiable
+p cnf 3 4
+1 -2 3 0
+2 -3 0
+1 3 0
+-1 3 0
+
+# 836 satisfiable
+p cnf 3 4
+-3 0
+1 2 3 0
+1 -2 -3 0
+-1 2 -3 0
+
+# 837 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-1 -3 0
+-1 2 0
+1 -2 3 0
+
+# 838 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-2 0
+2 -3 0
+-2 -3 0
+
+# 839 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 2 3 0
+1 -2 -3 0
+-1 2 -3 0
+
+# 840 satisfiable
+p cnf 3 4
+-1 3 0
+1 -2 0
+-2 -3 0
+-1 2 0
+
+# 841 satisfiable
+p cnf 3 4
+-1 -3 0
+1 -2 3 0
+1 -2 -3 0
+-3 0
+
+# 842 satisfiable
+p cnf 3 4
+1 2 3 0
+1 -2 0
+1 -2 3 0
+1 2 -3 0
+
+# 843 satisfiable
+p cnf 3 4
+3 0
+-2 3 0
+1 2 3 0
+1 2 -3 0
+
+# 844 satisfiable
+p cnf 3 4
+-1 2 0
+3 0
+1 -2 3 0
+-1 2 -3 0
+
+# 845 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 -2 3 0
+3 0
+-2 -3 0
+
+# 846 satisfiable
+p cnf 3 4
+-2 0
+-1 -3 0
+1 2 -3 0
+-1 2 -3 0
+
+# 847 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-3 0
+-1 -2 -3 0
+1 -3 0
+
+# 848 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-1 -2 0
+-1 -2 -3 0
+1 -2 3 0
+
+# 849 satisfiable
+p cnf 3 4
+1 2 -3 0
+-2 3 0
+-1 3 0
+-1 -2 -3 0
+
+# 850 satisfiable
+p cnf 3 4
+-1 2 0
+-3 0
+-1 2 -3 0
+-1 2 3 0
+
+# 851 satisfiable
+p cnf 3 4
+-2 3 0
+-1 -2 3 0
+-1 -2 3 0
+2 -3 0
+
+# 852 satisfiable
+p cnf 3 4
+2 -3 0
+1 -2 -3 0
+1 -3 0
+2 -3 0
+
+# 853 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-3 0
+-2 0
+1 2 3 0
+
+# 854 satisfiable
+p cnf 3 4
+-2 3 0
+-1 3 0
+-1 2 3 0
+3 0
+
+# 855 satisfiable
+p cnf 3 4
+1 -2 0
+1 2 -3 0
+1 2 -3 0
+1 -2 0
+
+# 856 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 -3 0
+1 2 3 0
+1 -2 0
+
+# 857 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 2 3 0
+-1 3 0
+-1 2 3 0
+
+# 858 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-1 -2 0
+-2 -3 0
+-1 -2 3 0
+
+# 859 satisfiable
+p cnf 3 4
+-1 3 0
+1 2 3 0
+-1 2 3 0
+-1 -2 0
+
+# 860 satisfiable
+p cnf 3 4
+2 3 0
+1 -2 -3 0
+2 3 0
+1 2 -3 0
+
+# 861 satisfiable
+p cnf 3 4
+-1 3 0
+1 -2 -3 0
+-2 -3 0
+-2 -3 0
+
+# 862 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 2 -3 0
+-1 -2 -3 0
+1 2 -3 0
+
+# 863 satisfiable
+p cnf 3 4
+-1 2 3 0
+2 0
+1 -2 3 0
+-2 -3 0
+
+# 864 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 2 3 0
+-1 2 3 0
+1 -2 -3 0
+
+# 865 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 0
+-1 2 -3 0
+-1 -2 3 0
+
+# 866 satisfiable
+p cnf 3 4
+1 2 0
+1 0
+-1 2 -3 0
+-1 -3 0
+
+# 867 satisfiable
+p cnf 3 4
+1 3 0
+-1 2 0
+1 2 3 0
+-1 -2 -3 0
+
+# 868 satisfiable
+p cnf 3 4
+2 3 0
+-1 -2 -3 0
+1 -2 3 0
+-1 2 0
+
+# 869 satisfiable
+p cnf 3 4
+-1 -3 0
+-1 2 0
+-1 2 3 0
+-1 2 3 0
+
+# 870 satisfiable
+p cnf 3 4
+2 -3 0
+-1 2 -3 0
+2 -3 0
+1 -2 -3 0
+
+# 871 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 -2 -3 0
+-1 2 0
+-1 -2 0
+
+# 872 satisfiable
+p cnf 3 4
+1 2 -3 0
+-2 -3 0
+-1 -2 -3 0
+1 3 0
+
+# 873 satisfiable
+p cnf 3 4
+1 2 -3 0
+-1 2 3 0
+-1 2 -3 0
+1 2 -3 0
+
+# 874 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 -2 3 0
+1 -2 0
+1 -3 0
+
+# 875 satisfiable
+p cnf 3 4
+-1 3 0
+1 -2 0
+1 -2 3 0
+-1 3 0
+
+# 876 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-3 0
+2 -3 0
+-1 -2 3 0
+
+# 877 satisfiable
+p cnf 3 4
+1 -2 0
+-1 2 3 0
+1 2 0
+1 -3 0
+
+# 878 satisfiable
+p cnf 3 4
+2 -3 0
+-1 2 0
+-1 2 0
+-1 2 -3 0
+
+# 879 satisfiable
+p cnf 3 4
+1 2 -3 0
+-1 -2 3 0
+1 3 0
+-1 -2 3 0
+
+# 880 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 2 -3 0
+-1 -2 0
+-1 -2 3 0
+
+# 881 satisfiable
+p cnf 3 4
+1 2 -3 0
+-2 0
+-1 -3 0
+1 2 0
+
+# 882 satisfiable
+p cnf 3 4
+1 3 0
+-1 -2 -3 0
+1 -2 3 0
+2 -3 0
+
+# 883 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-1 -2 -3 0
+1 -2 0
+1 -2 -3 0
+
+# 884 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 -2 3 0
+1 -2 0
+1 3 0
+
+# 885 satisfiable
+p cnf 2 4
+-1 -2 0
+-1 0
+2 0
+2 0
+
+# 886 satisfiable
+p cnf 3 4
+-1 2 -3 0
+1 2 3 0
+1 2 -3 0
+1 0
+
+# 887 satisfiable
+p cnf 3 4
+1 -2 -3 0
+2 -3 0
+-1 -2 3 0
+1 -2 0
+
+# 888 satisfiable
+p cnf 3 4
+1 -2 3 0
+-2 3 0
+1 2 0
+1 0
+
+# 889 satisfiable
+p cnf 3 4
+1 3 0
+1 -2 -3 0
+1 -2 -3 0
+-1 2 0
+
+# 890 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 2 0
+1 -3 0
+-1 3 0
+
+# 891 satisfiable
+p cnf 3 4
+-1 2 0
+1 -2 0
+1 -2 -3 0
+-1 3 0
+
+# 892 satisfiable
+p cnf 3 4
+-2 3 0
+2 3 0
+-2 -3 0
+-1 -2 0
+
+# 893 satisfiable
+p cnf 3 4
+1 -2 0
+-1 -2 3 0
+-1 -2 -3 0
+-1 -3 0
+
+# 894 satisfiable
+p cnf 3 4
+-1 -3 0
+-1 2 -3 0
+-1 -2 -3 0
+1 -2 -3 0
+
+# 895 satisfiable
+p cnf 3 4
+-1 -2 0
+1 -2 -3 0
+1 -2 3 0
+1 -2 3 0
+
+# 896 satisfiable
+p cnf 3 4
+2 -3 0
+1 -2 3 0
+1 -2 -3 0
+1 -2 -3 0
+
+# 897 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 -2 -3 0
+-1 2 -3 0
+2 -3 0
+
+# 898 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-2 -3 0
+-1 -2 -3 0
+-1 2 -3 0
+
+# 899 satisfiable
+p cnf 3 4
+-2 0
+-1 2 0
+-1 -2 0
+-1 2 -3 0
+
+# 900 satisfiable
+p cnf 3 4
+-1 -2 0
+1 0
+-1 -2 -3 0
+-1 -2 0
+
+# 901 unsatisfiable
+p cnf 3 4
+1 2 3 0
+1 0
+-1 0
+1 -2 3 0
+
+# 902 satisfiable
+p cnf 3 4
+-1 3 0
+1 -2 3 0
+1 -2 3 0
+1 -2 3 0
+
+# 903 satisfiable
+p cnf 3 4
+1 -2 -3 0
+1 -2 0
+1 2 -3 0
+1 2 3 0
+
+# 904 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 2 3 0
+-1 3 0
+1 -2 -3 0
+
+# 905 satisfiable
+p cnf 3 4
+-1 -2 0
+1 -2 -3 0
+1 -2 3 0
+1 2 3 0
+
+# 906 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 2 -3 0
+1 2 0
+1 2 -3 0
+
+# 907 satisfiable
+p cnf 3 4
+-1 2 0
+-1 2 3 0
+-1 -2 -3 0
+2 -3 0
+
+# 908 satisfiable
+p cnf 3 4
+1 2 0
+1 -2 3 0
+-1 -2 3 0
+1 2 0
+
+# 909 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-2 3 0
+1 -2 -3 0
+1 2 3 0
+
+# 910 satisfiable
+p cnf 3 4
+1 -2 0
+-1 2 -3 0
+-1 -2 -3 0
+1 -2 3 0
+
+# 911 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 2 3 0
+-1 -2 3 0
+-1 2 3 0
+
+# 912 satisfiable
+p cnf 3 4
+2 -3 0
+-1 2 0
+-1 -3 0
+1 -2 -3 0
+
+# 913 satisfiable
+p cnf 3 4
+2 0
+-1 2 -3 0
+-1 -2 3 0
+2 3 0
+
+# 914 satisfiable
+p cnf 3 4
+1 3 0
+1 -2 3 0
+1 -2 -3 0
+1 0
+
+# 915 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 -2 -3 0
+-1 3 0
+1 -2 -3 0
+
+# 916 satisfiable
+p cnf 3 4
+-3 0
+1 2 3 0
+2 -3 0
+-1 2 3 0
+
+# 917 satisfiable
+p cnf 3 4
+1 -2 0
+-2 -3 0
+2 0
+-1 2 -3 0
+
+# 918 satisfiable
+p cnf 3 4
+1 2 3 0
+2 -3 0
+-2 3 0
+1 2 3 0
+
+# 919 satisfiable
+p cnf 3 4
+-1 0
+-1 -3 0
+-1 -2 3 0
+-1 2 0
+
+# 920 satisfiable
+p cnf 3 4
+1 -2 -3 0
+2 -3 0
+1 -2 3 0
+1 -2 0
+
+# 921 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-1 -2 -3 0
+-1 3 0
+-1 -2 -3 0
+
+# 922 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 -2 -3 0
+1 2 3 0
+1 -2 0
+
+# 923 satisfiable
+p cnf 3 4
+1 3 0
+1 0
+1 -2 0
+-1 2 -3 0
+
+# 924 satisfiable
+p cnf 3 4
+-1 2 3 0
+2 -3 0
+-2 3 0
+-1 -2 3 0
+
+# 925 satisfiable
+p cnf 3 4
+1 -2 0
+-1 -2 3 0
+2 -3 0
+-3 0
+
+# 926 satisfiable
+p cnf 3 4
+1 2 -3 0
+3 0
+1 -2 -3 0
+1 2 -3 0
+
+# 927 satisfiable
+p cnf 3 4
+2 0
+-1 2 0
+-1 -2 -3 0
+1 -2 -3 0
+
+# 928 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 -2 0
+-2 -3 0
+1 -2 3 0
+
+# 929 satisfiable
+p cnf 3 4
+1 -3 0
+-2 -3 0
+-1 0
+1 2 3 0
+
+# 930 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 -2 -3 0
+1 2 3 0
+-2 3 0
+
+# 931 satisfiable
+p cnf 3 4
+1 0
+-1 -3 0
+-1 2 3 0
+-1 -2 -3 0
+
+# 932 satisfiable
+p cnf 3 4
+2 -3 0
+-1 2 3 0
+-1 2 -3 0
+-1 -2 3 0
+
+# 933 satisfiable
+p cnf 3 4
+1 2 3 0
+-2 3 0
+1 -2 3 0
+1 -2 0
+
+# 934 satisfiable
+p cnf 3 4
+1 -3 0
+2 3 0
+-1 3 0
+-1 -2 3 0
+
+# 935 satisfiable
+p cnf 3 4
+3 0
+1 -2 3 0
+-1 -2 3 0
+1 2 3 0
+
+# 936 satisfiable
+p cnf 3 4
+-1 0
+-2 0
+-1 2 3 0
+1 -2 3 0
+
+# 937 satisfiable
+p cnf 3 4
+-2 -3 0
+2 -3 0
+1 -2 3 0
+1 3 0
+
+# 938 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-2 -3 0
+-1 -2 3 0
+-1 -2 -3 0
+
+# 939 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-1 -2 -3 0
+-1 -2 -3 0
+-1 0
+
+# 940 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 -2 -3 0
+-1 2 3 0
+1 2 3 0
+
+# 941 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 2 0
+1 -2 -3 0
+1 2 0
+
+# 942 satisfiable
+p cnf 3 4
+1 -3 0
+2 0
+-1 2 0
+1 -2 3 0
+
+# 943 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 -2 3 0
+-1 -3 0
+-1 2 -3 0
+
+# 944 satisfiable
+p cnf 3 4
+2 -3 0
+-1 -2 3 0
+1 2 3 0
+1 2 3 0
+
+# 945 satisfiable
+p cnf 3 4
+1 -2 0
+1 -2 3 0
+1 -2 3 0
+-1 -2 0
+
+# 946 satisfiable
+p cnf 3 4
+-1 -3 0
+-1 2 3 0
+2 3 0
+2 3 0
+
+# 947 satisfiable
+p cnf 3 4
+-1 2 3 0
+2 -3 0
+1 2 -3 0
+1 -2 -3 0
+
+# 948 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 2 3 0
+-1 -2 -3 0
+2 3 0
+
+# 949 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 -2 3 0
+1 -2 3 0
+1 -3 0
+
+# 950 satisfiable
+p cnf 3 4
+1 -2 -3 0
+-1 -3 0
+1 -2 0
+-1 2 3 0
+
+# 951 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-1 2 -3 0
+-1 -2 -3 0
+-2 -3 0
+
+# 952 satisfiable
+p cnf 3 4
+1 2 3 0
+-2 -3 0
+-1 3 0
+1 -2 3 0
+
+# 953 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-2 -3 0
+-1 -2 -3 0
+-1 -2 -3 0
+
+# 954 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 -2 -3 0
+-1 -2 -3 0
+3 0
+
+# 955 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 2 -3 0
+2 3 0
+2 3 0
+
+# 956 satisfiable
+p cnf 3 4
+2 0
+-1 2 0
+-1 2 3 0
+-1 2 -3 0
+
+# 957 satisfiable
+p cnf 3 4
+1 2 3 0
+-1 -2 3 0
+-1 2 -3 0
+1 -3 0
+
+# 958 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 3 0
+-2 3 0
+1 -2 -3 0
+
+# 959 satisfiable
+p cnf 3 4
+-1 2 3 0
+-2 3 0
+-3 0
+1 2 -3 0
+
+# 960 satisfiable
+p cnf 3 4
+-1 -2 3 0
+1 -2 3 0
+-1 -3 0
+1 -2 3 0
+
+# 961 satisfiable
+p cnf 3 4
+2 -3 0
+-1 -2 -3 0
+-3 0
+1 2 0
+
+# 962 satisfiable
+p cnf 3 4
+1 -2 0
+3 0
+-1 -2 0
+-1 -2 -3 0
+
+# 963 satisfiable
+p cnf 3 4
+1 -2 0
+1 2 0
+1 2 -3 0
+-1 2 0
+
+# 964 satisfiable
+p cnf 3 4
+-2 3 0
+-1 3 0
+1 2 0
+-1 0
+
+# 965 satisfiable
+p cnf 3 4
+1 3 0
+1 -2 -3 0
+-1 2 3 0
+-1 2 -3 0
+
+# 966 satisfiable
+p cnf 3 4
+-1 3 0
+-1 -2 0
+-1 -2 -3 0
+-1 2 -3 0
+
+# 967 unsatisfiable
+p cnf 3 4
+3 0
+-3 0
+-1 2 -3 0
+1 2 3 0
+
+# 968 satisfiable
+p cnf 3 4
+-2 3 0
+-1 2 0
+1 3 0
+-1 2 3 0
+
+# 969 satisfiable
+p cnf 3 4
+-2 -3 0
+-1 2 3 0
+-2 -3 0
+-1 -2 -3 0
+
+# 970 satisfiable
+p cnf 3 4
+-1 2 0
+-1 -2 3 0
+2 0
+3 0
+
+# 971 satisfiable
+p cnf 3 4
+1 -2 -3 0
+1 3 0
+-1 2 3 0
+1 -2 -3 0
+
+# 972 satisfiable
+p cnf 3 4
+1 3 0
+1 2 -3 0
+-1 -2 -3 0
+1 2 -3 0
+
+# 973 satisfiable
+p cnf 3 4
+-1 2 0
+-1 -2 -3 0
+-2 -3 0
+-1 -2 0
+
+# 974 satisfiable
+p cnf 3 4
+-1 2 0
+-1 -2 3 0
+1 -2 -3 0
+-1 -2 -3 0
+
+# 975 satisfiable
+p cnf 3 4
+1 -2 3 0
+-1 -3 0
+-1 -2 3 0
+-1 -2 3 0
+
+# 976 satisfiable
+p cnf 3 4
+-1 -3 0
+1 2 0
+2 3 0
+1 2 -3 0
+
+# 977 satisfiable
+p cnf 3 4
+1 3 0
+1 -3 0
+1 -2 -3 0
+-2 0
+
+# 978 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-1 0
+1 -2 3 0
+1 -2 3 0
+
+# 979 satisfiable
+p cnf 3 4
+-1 -2 0
+2 -3 0
+1 -2 0
+-1 -3 0
+
+# 980 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 -2 -3 0
+-1 2 -3 0
+-1 -2 3 0
+
+# 981 satisfiable
+p cnf 3 4
+-1 2 3 0
+2 -3 0
+-1 -2 3 0
+-1 -2 3 0
+
+# 982 satisfiable
+p cnf 3 4
+-1 -3 0
+1 2 -3 0
+-1 2 -3 0
+1 -2 -3 0
+
+# 983 satisfiable
+p cnf 3 4
+3 0
+1 -2 3 0
+1 2 -3 0
+1 2 3 0
+
+# 984 satisfiable
+p cnf 3 4
+1 -2 0
+1 3 0
+-1 2 3 0
+1 2 3 0
+
+# 985 satisfiable
+p cnf 3 4
+-3 0
+1 -2 -3 0
+1 -2 -3 0
+1 -3 0
+
+# 986 satisfiable
+p cnf 3 4
+1 -2 3 0
+1 -2 -3 0
+-1 2 -3 0
+1 2 -3 0
+
+# 987 satisfiable
+p cnf 3 4
+1 2 0
+1 -2 3 0
+1 -2 3 0
+-1 2 3 0
+
+# 988 satisfiable
+p cnf 3 4
+-1 2 -3 0
+-1 3 0
+-1 2 -3 0
+-2 -3 0
+
+# 989 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 2 -3 0
+-1 3 0
+-1 2 0
+
+# 990 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+1 -2 -3 0
+-1 -2 -3 0
+-2 0
+
+# 991 satisfiable
+p cnf 3 4
+-1 -2 3 0
+-1 0
+-1 2 3 0
+1 2 0
+
+# 992 satisfiable
+p cnf 3 4
+-1 3 0
+1 2 3 0
+1 -2 -3 0
+-1 2 0
+
+# 993 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 2 -3 0
+1 -3 0
+1 2 3 0
+
+# 994 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-1 -2 0
+-1 2 3 0
+-1 0
+
+# 995 satisfiable
+p cnf 3 4
+-1 2 3 0
+-1 3 0
+1 0
+-1 -2 3 0
+
+# 996 satisfiable
+p cnf 3 4
+2 -3 0
+1 0
+-1 2 3 0
+1 3 0
+
+# 997 satisfiable
+p cnf 3 4
+1 2 -3 0
+1 2 -3 0
+-1 3 0
+1 3 0
+
+# 998 satisfiable
+p cnf 3 4
+-1 2 3 0
+1 2 -3 0
+-1 -2 -3 0
+1 -2 -3 0
+
+# 999 satisfiable
+p cnf 3 4
+2 -3 0
+3 0
+1 -3 0
+-1 2 3 0
+
+# 1000 satisfiable
+p cnf 3 4
+-1 -2 -3 0
+-2 3 0
+-3 0
+-2 3 0
+
