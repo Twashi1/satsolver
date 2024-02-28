@@ -1,9 +1,0 @@
-# MyTestName satisfiable
-p cnf 3 2
-1 2 3 0 
--1 -2 3 0
-
-# NextTestName unsatisfiable
-p cnf 2 2
-1 2 0
--1 -2 0

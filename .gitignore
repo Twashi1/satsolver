@@ -1,4 +1,9 @@
 secret/*
+implementation.py
+PythonApplication1.py
+*.pyproj
+temp.txt
+tests/results.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

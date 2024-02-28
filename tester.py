@@ -1,100 +1,267 @@
-# GO BOTTOM FOR OPTIONS
 
-def readExtendedDIMACS(file):
-    with open(file, 'r') as f:
-        lines = f.readlines()
+import random
+import time
+from dataclasses import dataclass
+from inspect import signature
 
-        tests = []
-        headers = [i for i, line in enumerate(lines) if line.startswith("#")]
-
-        i = 0
-
-        for i, header in enumerate(headers):
-            line = lines[header]
-            nextHeader = None if i + 1 >= len(headers) else headers[i + 1]
-
-            _, name, satisfiability = line.split(" ")
-            tests.append((name, satisfiability[:-1] in ('satisfiable', 'sat'), lines[header + 1:nextHeader]))
-
-        return tests
-    
-def writeTest(test, filename):
-    with open(filename, 'wt+') as f:
-        for line in test[2]:
-            if len(line) <= 1 or line.startswith("c"):
-                continue
-
-            f.write(line)
-    
-def testSolve(test, sat_solve, dimacs_loader, is_simple_sat_solver, require_all_literals):
-    writeTest(test, "temp.txt")
-
-    result = None
-
-    if is_simple_sat_solver:
-        result = sat_solve(dimacs_loader("temp.txt"))
-    else:
-        result = sat_solve(dimacs_loader("temp.txt"), [])
-
-    if result is False:
-        if not test[1]:
-            return True
-
-        print(f"{test[0]} failed, expected satisfiable")
-
-        return False
-    
-    if not test[1]:
-        print(f"{test[0]} failed, {result} is not a satisfying truth assignment")
-
-        return False
-    
-    if require_all_literals:
-        clause_set = dimacs_loader("temp.txt")
-        vars = set()
-
-        for clause in clause_set:
-            for var in clause: vars.add(abs(var))
-
-        if len(vars) != len(result):
-            print(f"Warning: assignment {result} did not contain all literals: {vars}")
-
-    return True
-
-# Test extended dimacs format
-def testExtended(filename, sat_solve, dimacs_loader, is_simple_sat_solver, require_all_literals):
-    tests = readExtendedDIMACS(filename)
-
-    passed = 0
-
-    for test in tests:
-        result = testSolve(test, sat_solve, dimacs_loader, is_simple_sat_solver, require_all_literals)
-        if result: passed += 1
-
-    print(f"Finished {len(tests)}")
-    print(f"{passed}/{len(tests)}, {(passed/len(tests)) * 100:.3f}%")
-
-### FILL IN DETAILS HERE
-
-# ignore this    
+# Importing implementation from a folder called "secret"
 import sys
 sys.path.append("secret/")
 import implementation
 
-# name of the test file to read, expecting "extended" dimacs format
-# basically each test is separated by # testName [un]satisfiable e.g. "tests/simple.txt"
-testName = "tests/1k4v16c.txt"
-# function to load dimacs file, expecting just to take a filename
-dimacs_loader = implementation.load_dimacs
-# function to SAT-solve, expecting to take a clause set and a partial assignment
-sat_solver = implementation.dpll_sat_solve
-# if you're testing your simple sat solver, set this to true so a partial assignment is not required
-is_simple_sat_solver = False
-# require all literals value to be stated, not just a partial assignment
-# e.g. [[-1, 3], [1, 2]] requires [2, 3, (+-)1] not just [2, 3]
-require_all_literals = True
+### Set options here
 
-if sat_solver is not None:
-    testExtended(testName, sat_solver, dimacs_loader, is_simple_sat_solver, require_all_literals)
-else:
-    print("Configure in file (import it, and set value of the sat_solver variable)")
+# Each literal has x chance of being included in a given clause
+# If this is not 1, its possible a literal isn't generated in any clause, thus we get less than the requested minimum
+#   number of variables
+LITERAL_PRESENCE_WEIGHT = 0.8
+# Attempts to generate a clause before we assume that the given arguments do not allow generation of any valid clause
+#   or that valid clauses are too rare
+CLAUSE_GENERATION_ATTEMPT_LIMIT = 100
+# Ensures all variables in range 1->n are generated (where n is variableCount)
+#   - Does not necessarily mean it will always generate as many variables as specified in the config
+#       especially at low literal presence weights
+NO_MISSING_VARIABLES = False
+
+## GENERATE VARIABLES
+
+# The filename to save the test cases to
+GENERATE_FILENAME = "tests/1k_less_vars_less_clauses.txt"
+# The interval for how many variables can generate (inclusive)
+#   - Not guaranteed to generate the minimum number of variables listed
+GENERATE_VARIABLE_INTERVAL = (4, 5)
+# The interval for how many clauses can generate (inclusive)
+GENERATE_CLAUSE_INTERVAL = (4, 5)
+# Generate at most n cases
+GENERATE_NUMBER = 1_000
+# Amount of times we attempt to generate a clause before we give up
+GENERATE_CLAUSE_ATTEMPT_LIMIT = 1_000
+# A working implementation of your SAT solver
+#   - Only required for generating your own cases (can keep as None otherwise)
+IMPLEMENTATION_WORKING_SAT_SOLVER = implementation.simple_sat_solve
+
+## TEST VARIABLES
+
+# The filename to read the test cases from
+TEST_FILENAME = "tests/1k_less_vars_less_clauses.txt"
+# The filename to write results of failed tests to
+TEST_RESULT_FILENAME = "tests/results.txt"
+# The implementation of your SAT solver you want to test
+#   - Only required for testing a SAT solver, not generating your own cases
+IMPLEMENTATION_TEST_SAT_SOLVER = implementation.dpll_sat_solve
+# The implementation of your DIMACS reader
+#   - Only required for testing a SAT solver on a file
+IMPLEMENTATION_LOAD_DIMACS = implementation.load_dimacs
+# The place to temporarily write text to
+TEST_TEMPORARY_WRITE_FILENAME = "temp.txt"
+
+## TEST ON FLY VARIABLES
+# Requires:
+# - GENERATE_FILENAME
+# - GENERATE_VARIABLE_INTERVAL
+# - GENERATE_CLAUSE_INTERVAL
+# - GENERATE_NUMBER
+# - GENERATE_CLAUSE_ATTEMPT_LIMIT
+# - TEST_RESULT_FILENAME
+# - IMPLEMENTATION_WORKING_SAT_SOLVER
+# - IMPLEMENTATION_TEST_SAT_SOLVER
+
+def get_variables(clause_set : list[list[int]]) -> set[int]:
+    return {abs(literal) for clause in clause_set for literal in clause}
+
+@dataclass
+class Case:
+    clause_set : list[list[int]]
+    is_satisfiable : bool
+    name : str
+
+def sanitise_clause_set(clause_set) -> int:
+    variables = list(get_variables(clause_set))
+
+    if NO_MISSING_VARIABLES:
+        if len(variables) != max(variables):
+            # TODO: almost definitely an inefficient way of doing this
+            for clause in clause_set:
+                for i, literal in enumerate(clause):
+                    clause[i] = ((literal > 0) * 2 - 1) * (variables.index(abs(literal)) + 1)
+
+    return len(variables)
+
+def convert_to_dimacs(case : Case) -> str:
+    variable_count = sanitise_clause_set(case.clause_set)
+    clause_count = len(case.clause_set)
+    satisfiability = 'sat' if case.is_satisfiable else 'unsat'
+
+    return f"p cnf {variable_count} {clause_count}\nc {satisfiability} \"{case.name}\"\n" + " 0\n".join([" ".join([str(literal) for literal in clause]) for clause in case.clause_set]) + " 0\n"
+
+def write_cases(cases, filename) -> None:
+    if len(cases) == 0: return
+
+    with open(filename, "wt+") as f:
+        for case in cases:
+            f.write(convert_to_dimacs(case))
+
+def generate_clause() -> list[int]:
+    return [
+        (i + 1) * (random.randint(0, 1) * 2 - 1)
+        for i in range(random.randint(*GENERATE_VARIABLE_INTERVAL))
+        if random.random() < LITERAL_PRESENCE_WEIGHT
+    ]
+
+def execute_sat_solver(clause_set, solver):
+    if solver is None:
+        raise RuntimeError("Didn't provide a SAT solver function, check options at top of the file")
+
+    sig = signature(solver)
+
+    if len(sig.parameters) == 1:
+        return solver(clause_set)
+    else:
+        return solver(clause_set, [])
+
+def is_valid(clause : list[int]) -> bool:
+    if len(clause) == 0: return False
+
+    # TODO: look for duplicate clauses
+    # NOTE: I know this could just be "return len(clause)"
+    
+    return True
+
+def generate_case(name) -> Case:
+    clause_count = random.randint(*GENERATE_CLAUSE_INTERVAL)
+    clause_set = [None] * clause_count
+
+    for index in range(clause_count):
+        clause = generate_clause()
+        attempts = 0
+
+        while not is_valid(clause) and attempts < GENERATE_CLAUSE_ATTEMPT_LIMIT:
+            clause = generate_clause()
+
+            attempts += 1
+
+        if attempts < GENERATE_CLAUSE_ATTEMPT_LIMIT:
+            clause_set[index] = clause
+
+    sanitise_clause_set(clause_set)
+
+    return Case(
+        clause_set=clause_set,
+        is_satisfiable=execute_sat_solver(clause_set, IMPLEMENTATION_WORKING_SAT_SOLVER) is not False,
+        name=name
+    )
+
+def write_and_load(text):
+    with open(TEST_TEMPORARY_WRITE_FILENAME, "wt+") as f:
+        f.write(text)
+
+    return IMPLEMENTATION_LOAD_DIMACS(TEST_TEMPORARY_WRITE_FILENAME)
+
+def read_dimacs():
+    cases = []
+
+    with open(TEST_FILENAME, "r") as f:
+        # TODO: don't assume newline
+        next_line_expect_info = False
+
+        current_case = Case(None, None, None)
+        current_text = ""
+
+        for line in f.readlines():
+            if line.startswith('p'):
+                current_case.clause_set = write_and_load(current_text)
+                cases.append(current_case)
+                current_case = Case(None, None, None)
+                current_text = f"{line}"
+
+                next_line_expect_info = True
+            elif next_line_expect_info and line.startswith('c'):
+                next_line_expect_info = False
+
+                _, satisfiability, name = line.split(" ")
+
+                current_case.is_satisfiable = satisfiability == "sat"
+                current_case.name = name
+            else:
+                current_text += line
+
+        current_case.clause_set = write_and_load(current_text)
+        cases.append(current_case)
+
+    return cases[1:]
+
+def test_case(case : Case):
+    result = execute_sat_solver(case.clause_set, IMPLEMENTATION_TEST_SAT_SOLVER)
+
+    if result is not False:
+        if case.is_satisfiable:
+            return True, result
+        else:
+            return False, result
+    else:
+        if case.is_satisfiable:
+            return False, None
+        else:
+            return True, None
+
+def test_cases(cases) -> list[Case]:
+    passed_cases = 0
+    total_cases = 0
+    failed_cases = 0
+
+    failed_cases = []
+    
+    start = time.time()
+
+    for case in cases:
+        successful, assignment = test_case(case)
+
+        if successful:
+            passed_cases += 1
+        else:
+            failed_cases.append(case)
+
+            if assignment is not None:
+                print(f"{case.name} Index {failed_cases}: Case was unsatisfiable, but got truth assignment {assignment}")
+            else:
+                print(f"{case.name} Index {failed_cases}: Case was satisfiable, but SAT misidentified")
+
+            failed_cases += 1
+
+        total_cases += 1
+
+    end = time.time()
+
+    print(f"Passed {passed_cases}/{total_cases}; {passed_cases/total_cases*100:.2f}%")
+
+    elapsed = (end - start) * 1000
+
+    print(f"Elapsed time: {elapsed:.2f}ms")
+
+    return failed_cases
+
+### MAIN FUNCTIONS
+def generate():
+    write_cases(
+        (generate_case(i) for i in range(GENERATE_NUMBER)),
+        GENERATE_FILENAME
+    )
+
+def test():
+    cases = read_dimacs()
+
+    failed_cases = test_cases(cases)
+
+    write_cases(failed_cases, TEST_RESULT_FILENAME)
+
+def test_on_fly():
+    failed_cases = test_cases((
+        generate_case(i) for i in range(GENERATE_NUMBER)
+    ))
+
+    write_cases(failed_cases, TEST_RESULT_FILENAME)
+
+print("1. Generate cases and write to file\n2. Test from file\n3. Generate and test on the fly")
+option = int(input("Enter option: "))
+
+[generate, test, test_on_fly][option - 1]()
