@@ -1,4 +1,5 @@
 secret/*
+.vs/
 implementation.py
 PythonApplication1.py
 *.pyproj
