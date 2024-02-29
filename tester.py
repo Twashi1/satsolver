@@ -22,6 +22,8 @@ CLAUSE_GENERATION_ATTEMPT_LIMIT = 100
 #   - Does not necessarily mean it will always generate as many variables as specified in the config
 #       especially at low literal presence weights
 NO_MISSING_VARIABLES = False
+# Ensures generator never generates empty clause
+ALLOW_EMPTY_CLAUSES = True
 
 ## GENERATE VARIABLES
 
@@ -123,7 +125,8 @@ def execute_sat_solver(clause_set, solver):
         return solver(clause_set, [])
 
 def is_valid(clause : list[int]) -> bool:
-    if len(clause) == 0: return False
+    if not ALLOW_EMPTY_CLAUSES:
+        if len(clause) == 0: return False
 
     # TODO: look for duplicate clauses
     # NOTE: I know this could just be "return len(clause)"
