@@ -14,7 +14,7 @@ import implementation
 # Each literal has x chance of being included in a given clause
 # If this is not 1, its possible a literal isn't generated in any clause, thus we get less than the requested minimum
 #   number of variables
-LITERAL_PRESENCE_WEIGHT = 0.8
+LITERAL_PRESENCE_WEIGHT = 0.7
 # Attempts to generate a clause before we assume that the given arguments do not allow generation of any valid clause
 #   or that valid clauses are too rare
 CLAUSE_GENERATION_ATTEMPT_LIMIT = 100
@@ -31,7 +31,7 @@ GENERATE_FILENAME = "tests/1k_less_vars_less_clauses.txt"
 #   - Not guaranteed to generate the minimum number of variables listed
 GENERATE_VARIABLE_INTERVAL = (4, 5)
 # The interval for how many clauses can generate (inclusive)
-GENERATE_CLAUSE_INTERVAL = (4, 5)
+GENERATE_CLAUSE_INTERVAL = (2, 3)
 # Generate at most n cases
 GENERATE_NUMBER = 1_000
 # Amount of times we attempt to generate a clause before we give up
@@ -85,16 +85,19 @@ def sanitise_clause_set(clause_set) -> int:
                 for i, literal in enumerate(clause):
                     clause[i] = ((literal > 0) * 2 - 1) * (variables.index(abs(literal)) + 1)
 
-    return len(variables)
+    # DIMACS format always lists the largest variable in the solution
+    return max(variables)
 
 def convert_to_dimacs(case : Case) -> str:
     variable_count = sanitise_clause_set(case.clause_set)
     clause_count = len(case.clause_set)
     satisfiability = 'sat' if case.is_satisfiable else 'unsat'
 
-    return f"p cnf {variable_count} {clause_count}\nc {satisfiability} \"{case.name}\"\n" + " 0\n".join([" ".join([str(literal) for literal in clause]) for clause in case.clause_set]) + " 0\n"
+    return f"c special {satisfiability} \"{case.name}\"\np cnf {variable_count} {clause_count}\n" + " 0\n".join([" ".join([str(literal) for literal in clause]) for clause in case.clause_set]) + " 0\n"
 
 def write_cases(cases, filename) -> None:
+    cases = list(cases)
+    
     if len(cases) == 0: return
 
     with open(filename, "wt+") as f:
@@ -152,6 +155,8 @@ def generate_case(name) -> Case:
     )
 
 def write_and_load(text):
+    if len(text) == 0: return text
+
     with open(TEST_TEMPORARY_WRITE_FILENAME, "wt+") as f:
         f.write(text)
 
@@ -168,20 +173,22 @@ def read_dimacs():
         current_text = ""
 
         for line in f.readlines():
-            if line.startswith('p'):
+            if line.startswith("c special"):
                 current_case.clause_set = write_and_load(current_text)
                 cases.append(current_case)
-                current_case = Case(None, None, None)
-                current_text = f"{line}"
+
+                _, _, satisfiability, name = line.split(" ")
+
+                current_case = Case(None, satisfiability == "sat", name)
+                current_text = ""
 
                 next_line_expect_info = True
-            elif next_line_expect_info and line.startswith('c'):
+            elif line.startswith("c"):
+                continue
+            elif next_line_expect_info and line.startswith('p'):
                 next_line_expect_info = False
 
-                _, satisfiability, name = line.split(" ")
-
-                current_case.is_satisfiable = satisfiability == "sat"
-                current_case.name = name
+                current_text += line
             else:
                 current_text += line
 
@@ -207,7 +214,7 @@ def test_case(case : Case):
 def test_cases(cases) -> list[Case]:
     passed_cases = 0
     total_cases = 0
-    failed_cases = 0
+    failed_cases_count = 0
 
     failed_cases = []
     
@@ -222,11 +229,11 @@ def test_cases(cases) -> list[Case]:
             failed_cases.append(case)
 
             if assignment is not None:
-                print(f"{case.name} Index {failed_cases}: Case was unsatisfiable, but got truth assignment {assignment}")
+                print(f"{case.name} Index {failed_cases_count}: Case was unsatisfiable, but got truth assignment {assignment}")
             else:
-                print(f"{case.name} Index {failed_cases}: Case was satisfiable, but SAT misidentified")
+                print(f"{case.name} Index {failed_cases_count}: Case was satisfiable, but SAT misidentified")
 
-            failed_cases += 1
+            failed_cases_count += 1
 
         total_cases += 1
 
