@@ -26,19 +26,19 @@ NO_MISSING_VARIABLES = False
 ## GENERATE VARIABLES
 
 # The filename to save the test cases to
-GENERATE_FILENAME = "tests/1k_less_vars_less_clauses.txt"
+GENERATE_FILENAME = "tests/3_big_cases.txt"
 # The interval for how many variables can generate (inclusive)
 #   - Not guaranteed to generate the minimum number of variables listed
-GENERATE_VARIABLE_INTERVAL = (4, 5)
+GENERATE_VARIABLE_INTERVAL = (120, 140)
 # The interval for how many clauses can generate (inclusive)
-GENERATE_CLAUSE_INTERVAL = (4, 5)
+GENERATE_CLAUSE_INTERVAL = (1500, 1700)
 # Generate at most n cases
-GENERATE_NUMBER = 1_000
+GENERATE_NUMBER = 3
 # Amount of times we attempt to generate a clause before we give up
 GENERATE_CLAUSE_ATTEMPT_LIMIT = 1_000
 # A working implementation of your SAT solver
 #   - Only required for generating your own cases (can keep as None otherwise)
-IMPLEMENTATION_WORKING_SAT_SOLVER = implementation.simple_sat_solve
+IMPLEMENTATION_WORKING_SAT_SOLVER = implementation.dpll_sat_solve
 
 ## TEST VARIABLES
 
