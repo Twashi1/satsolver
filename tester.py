@@ -1,3 +1,4 @@
+# TODO: attempt to ensure unsatisfiable cases by inverting satisfying truth assignments
 
 import random
 import time
@@ -14,7 +15,7 @@ import implementation
 # Each literal has x chance of being included in a given clause
 # If this is not 1, its possible a literal isn't generated in any clause, thus we get less than the requested minimum
 #   number of variables
-LITERAL_PRESENCE_WEIGHT = 0.7
+LITERAL_PRESENCE_WEIGHT = 0.8
 # Attempts to generate a clause before we assume that the given arguments do not allow generation of any valid clause
 #   or that valid clauses are too rare
 CLAUSE_GENERATION_ATTEMPT_LIMIT = 100
@@ -28,14 +29,14 @@ ALLOW_EMPTY_CLAUSES = True
 ## GENERATE VARIABLES
 
 # The filename to save the test cases to
-GENERATE_FILENAME = "tests/3_big_cases.txt"
+GENERATE_FILENAME = "tests/5_big_cases.txt"
 # The interval for how many variables can generate (inclusive)
 #   - Not guaranteed to generate the minimum number of variables listed
-GENERATE_VARIABLE_INTERVAL = (120, 140)
+GENERATE_VARIABLE_INTERVAL = (60, 80)
 # The interval for how many clauses can generate (inclusive)
-GENERATE_CLAUSE_INTERVAL = (1500, 1700)
+GENERATE_CLAUSE_INTERVAL = (1500, 2000)
 # Generate at most n cases
-GENERATE_NUMBER = 3
+GENERATE_NUMBER = 5
 # Amount of times we attempt to generate a clause before we give up
 GENERATE_CLAUSE_ATTEMPT_LIMIT = 1_000
 # A working implementation of your SAT solver
