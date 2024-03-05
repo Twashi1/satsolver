@@ -30,18 +30,21 @@ ALLOW_EMPTY_CLAUSES = True
 
 # The filename to save the test cases to
 GENERATE_FILENAME = "tests/5_big_cases.txt"
+# Seed for generation
+#   - Might be best to set this to a constant for speed comparisons with testing on the fly
+GENERATE_SEED = time.time()
 # The interval for how many variables can generate (inclusive)
 #   - Not guaranteed to generate the minimum number of variables listed
-GENERATE_VARIABLE_INTERVAL = (60, 80)
+GENERATE_VARIABLE_INTERVAL = (10, 20)
 # The interval for how many clauses can generate (inclusive)
-GENERATE_CLAUSE_INTERVAL = (1500, 2000)
+GENERATE_CLAUSE_INTERVAL = (300, 400)
 # Generate at most n cases
-GENERATE_NUMBER = 5
+GENERATE_NUMBER = 500
 # Amount of times we attempt to generate a clause before we give up
 GENERATE_CLAUSE_ATTEMPT_LIMIT = 1_000
 # A working implementation of your SAT solver
 #   - Only required for generating your own cases (can keep as None otherwise)
-IMPLEMENTATION_WORKING_SAT_SOLVER = implementation.dpll_sat_solve
+IMPLEMENTATION_WORKING_SAT_SOLVER = implementation.simple_sat_solve
 
 ## TEST VARIABLES
 
@@ -250,6 +253,8 @@ def test_cases(cases) -> list[Case]:
     print(f"Elapsed time: {elapsed:.2f}ms")
 
     return failed_cases
+
+random.seed(GENERATE_SEED)
 
 ### MAIN FUNCTIONS
 def generate():
