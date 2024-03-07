@@ -61,6 +61,13 @@ IMPLEMENTATION_TEST_SAT_SOLVER = implementation.dpll_sat_solve
 IMPLEMENTATION_LOAD_DIMACS = implementation.load_dimacs
 # The place to temporarily write text to
 TEST_TEMPORARY_WRITE_FILENAME = "temp.txt"
+# Must have a value in the assignment for every variable, and exactly every variable
+#   - It might be that you need to generate for a value for all variables 1->n,
+#       but lecturer never replied to email so idk
+TEST_REQUIRE_FULL_SATISFYING_ASSIGNMENT = True
+# Considers a full satisfying assignment to contain all variables from 1->n,
+#   instead of *exactly* all variables in the clause set 
+TEST_FULL_SATISFYING_IS_RANGE = False
 
 ## TEST ON FLY VARIABLES
 # Requires:
@@ -212,11 +219,34 @@ def read_dimacs():
 
     return cases[1:]
 
+def test_assignment_validity(clause_set, result):
+    # TODO: if function provided, we could ensure the assignment provided
+    #   does satisfy the clause set
+    if TEST_REQUIRE_FULL_SATISFYING_ASSIGNMENT:
+        variables = None
+        if not TEST_FULL_SATISFYING_IS_RANGE:
+            # Get all variables from clause set
+            variables = list({abs(literal) for clause in clause_set for literal in clause})
+        else:
+            # Generate all variables in range 1->n where n is the largest variable in clause set
+            variables = list(range(1, max((abs(literal) for clause in clause_set for literal in clause)) + 1))
+
+        # Should be unnecessary, but testing code doesn't need to be fast
+        variables.sort()
+        result_variables = list(abs(literal) for literal in result)
+        result_variables.sort()
+
+        if variables != result_variables:
+            print(f"Warning: partial assignment instead of full assignment: assignment {result_variables} doesn't match variables {variables}")
+                
+
 def test_case(case : Case):
     result, elapsed = execute_sat_solver(case.clause_set, IMPLEMENTATION_TEST_SAT_SOLVER)
 
     if result is not False:
         if case.is_satisfiable:
+            test_assignment_validity(case.clause_set, result)
+
             return True, result, elapsed
         else:
             return False, result, elapsed
