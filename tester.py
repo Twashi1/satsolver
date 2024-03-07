@@ -32,7 +32,8 @@ ALLOW_EMPTY_CLAUSES = True
 GENERATE_FILENAME = "tests/5_big_cases.txt"
 # Seed for generation
 #   - Might be best to set this to a constant for speed comparisons with testing on the fly
-GENERATE_SEED = time.time()
+# GENERATE_SEED = time.time()
+GENERATE_SEED = 0
 # The interval for how many variables can generate (inclusive)
 #   - Not guaranteed to generate the minimum number of variables listed
 GENERATE_VARIABLE_INTERVAL = (10, 20)
@@ -123,10 +124,17 @@ def execute_sat_solver(clause_set, solver):
 
     sig = signature(solver)
 
+    start = time.time_ns()
+    result = None
+
     if len(sig.parameters) == 1:
-        return solver(clause_set)
+        result = solver(clause_set)
     else:
-        return solver(clause_set, [])
+        result = solver(clause_set, [])
+
+    elapsed = time.time_ns() - start
+    
+    return result, elapsed
 
 def is_valid(clause : list[int]) -> bool:
     if not ALLOW_EMPTY_CLAUSES:
@@ -205,30 +213,34 @@ def read_dimacs():
     return cases[1:]
 
 def test_case(case : Case):
-    result = execute_sat_solver(case.clause_set, IMPLEMENTATION_TEST_SAT_SOLVER)
+    result, elapsed = execute_sat_solver(case.clause_set, IMPLEMENTATION_TEST_SAT_SOLVER)
 
     if result is not False:
         if case.is_satisfiable:
-            return True, result
+            return True, result, elapsed
         else:
-            return False, result
+            return False, result, elapsed
     else:
         if case.is_satisfiable:
-            return False, None
+            return False, None, elapsed
         else:
-            return True, None
+            return True, None, elapsed
 
 def test_cases(cases) -> list[Case]:
+    start_testing = time.time() 
+
     passed_cases = 0
     total_cases = 0
     failed_cases_count = 0
 
     failed_cases = []
-    
-    start = time.time()
 
+    total_elapsed_ns = 0
+    
     for case in cases:
-        successful, assignment = test_case(case)
+        successful, assignment, elapsed_ns = test_case(case)
+
+        total_elapsed_ns += elapsed_ns
 
         if successful:
             passed_cases += 1
@@ -244,17 +256,11 @@ def test_cases(cases) -> list[Case]:
 
         total_cases += 1
 
-    end = time.time()
-
     print(f"Passed {passed_cases}/{total_cases}; {passed_cases/total_cases*100:.2f}%")
-
-    elapsed = (end - start) * 1000
-
-    print(f"Elapsed time: {elapsed:.2f}ms")
+    print(f"Elapsed SAT time: {total_elapsed_ns*10**(-6):.5g}ms")
+    print(f"Total testing time: {time.time() - start_testing:.2f}s")
 
     return failed_cases
-
-random.seed(GENERATE_SEED)
 
 ### MAIN FUNCTIONS
 def generate():
@@ -277,7 +283,10 @@ def test_on_fly():
 
     write_cases(failed_cases, TEST_RESULT_FILENAME)
 
+# Entry point
 print("1. Generate cases and write to file\n2. Test from file\n3. Generate and test on the fly")
 option = int(input("Enter option: "))
+
+random.seed(GENERATE_SEED)
 
 [generate, test, test_on_fly][option - 1]()
