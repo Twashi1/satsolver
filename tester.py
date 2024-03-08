@@ -8,7 +8,8 @@ from inspect import signature
 # Importing implementation from a folder called "secret"
 import sys
 sys.path.append("secret/")
-import implementation
+import two_literals as two_literals
+import implementation as primary
 
 ### Set options here
 
@@ -36,16 +37,16 @@ GENERATE_FILENAME = "tests/5_big_cases.txt"
 GENERATE_SEED = 0
 # The interval for how many variables can generate (inclusive)
 #   - Not guaranteed to generate the minimum number of variables listed
-GENERATE_VARIABLE_INTERVAL = (10, 20)
+GENERATE_VARIABLE_INTERVAL = (60, 80)
 # The interval for how many clauses can generate (inclusive)
-GENERATE_CLAUSE_INTERVAL = (300, 400)
+GENERATE_CLAUSE_INTERVAL = (1500, 2000)
 # Generate at most n cases
-GENERATE_NUMBER = 500
+GENERATE_NUMBER = 10
 # Amount of times we attempt to generate a clause before we give up
 GENERATE_CLAUSE_ATTEMPT_LIMIT = 1_000
 # A working implementation of your SAT solver
 #   - Only required for generating your own cases (can keep as None otherwise)
-IMPLEMENTATION_WORKING_SAT_SOLVER = implementation.simple_sat_solve
+IMPLEMENTATION_WORKING_SAT_SOLVER = two_literals.simple_sat_solve
 
 ## TEST VARIABLES
 
@@ -55,10 +56,10 @@ TEST_FILENAME = "tests/1k_less_vars_less_clauses.txt"
 TEST_RESULT_FILENAME = "tests/results.txt"
 # The implementation of your SAT solver you want to test
 #   - Only required for testing a SAT solver, not generating your own cases
-IMPLEMENTATION_TEST_SAT_SOLVER = implementation.dpll_sat_solve
+IMPLEMENTATION_TEST_SAT_SOLVER = two_literals.dpll_sat_solve
 # The implementation of your DIMACS reader
 #   - Only required for testing a SAT solver on a file
-IMPLEMENTATION_LOAD_DIMACS = implementation.load_dimacs
+IMPLEMENTATION_LOAD_DIMACS = two_literals.load_dimacs
 # The place to temporarily write text to
 TEST_TEMPORARY_WRITE_FILENAME = "temp.txt"
 # Must have a value in the assignment for every variable, and exactly every variable
@@ -170,9 +171,11 @@ def generate_case(name) -> Case:
 
     sanitise_clause_set(clause_set)
 
+    result, _ = execute_sat_solver(clause_set, IMPLEMENTATION_WORKING_SAT_SOLVER)
+
     return Case(
         clause_set=clause_set,
-        is_satisfiable=execute_sat_solver(clause_set, IMPLEMENTATION_WORKING_SAT_SOLVER) is not False,
+        is_satisfiable=result is not False,
         name=name
     )
 
@@ -184,6 +187,7 @@ def write_and_load(text):
 
     return IMPLEMENTATION_LOAD_DIMACS(TEST_TEMPORARY_WRITE_FILENAME)
 
+# Doesn't convert DIMACS into clause set because then its collusion or something and university murders me idk
 def read_dimacs():
     cases = []
 
@@ -237,8 +241,7 @@ def test_assignment_validity(clause_set, result):
         result_variables.sort()
 
         if variables != result_variables:
-            print(f"Warning: partial assignment instead of full assignment: assignment {result_variables} doesn't match variables {variables}")
-                
+            print(f"Warning: partial assignment instead of full assignment: assignment {result_variables} doesn't match variables {variables}")                
 
 def test_case(case : Case):
     result, elapsed = execute_sat_solver(case.clause_set, IMPLEMENTATION_TEST_SAT_SOLVER)
