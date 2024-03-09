@@ -37,11 +37,11 @@ GENERATE_FILENAME = "tests/5_big_cases.txt"
 GENERATE_SEED = 0
 # The interval for how many variables can generate (inclusive)
 #   - Not guaranteed to generate the minimum number of variables listed
-GENERATE_VARIABLE_INTERVAL = (60, 80)
+GENERATE_VARIABLE_INTERVAL = (20, 30)
 # The interval for how many clauses can generate (inclusive)
-GENERATE_CLAUSE_INTERVAL = (1500, 2000)
+GENERATE_CLAUSE_INTERVAL = (500, 1000)
 # Generate at most n cases
-GENERATE_NUMBER = 10
+GENERATE_NUMBER = 1000
 # Amount of times we attempt to generate a clause before we give up
 GENERATE_CLAUSE_ATTEMPT_LIMIT = 1_000
 # A working implementation of your SAT solver
