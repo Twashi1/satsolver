@@ -8,8 +8,7 @@ from inspect import signature
 # Importing implementation from a folder called "secret"
 import sys
 sys.path.append("secret/")
-import pre_cdcl as two_literals
-import implementation as primary
+import two_literals as two_literals
 
 ### Set options here
 
@@ -51,11 +50,15 @@ GENERATE_CLAUSE_ATTEMPT_LIMIT = 1_000
 # A working implementation of your SAT solver
 #   - Only required for generating your own cases (can keep as None otherwise)
 IMPLEMENTATION_WORKING_SAT_SOLVER = two_literals.simple_sat_solve
+# Some function that takes a clause, and an assignment, and returns True if satisfied
+#   - Can be None, just won't check your satisfying assignments are actually satisfying
+#   - This takes a lot of time if you have a lot of clauses, would recommend replacing it with an O(n) implementation
+IMPLEMENTATION_WORKING_SATISFIABILITY_CHECK = lambda clause, assignment: any(((literal in assignment) for literal in clause))
 
 ## TEST VARIABLES
 
 # The filename to read the test cases from
-TEST_FILENAME = "tests/8queens.txt"
+TEST_FILENAME = "tests/adverse.txt"
 # The filename to write results of failed tests to
 TEST_RESULT_FILENAME = "tests/results.txt"
 # The implementation of your SAT solver you want to test
@@ -66,13 +69,10 @@ IMPLEMENTATION_TEST_SAT_SOLVER = two_literals.dpll_sat_solve
 IMPLEMENTATION_LOAD_DIMACS = two_literals.load_dimacs
 # The place to temporarily write text to
 TEST_TEMPORARY_WRITE_FILENAME = "temp.txt"
-# Must have a value in the assignment for every variable, and exactly every variable
-#   - It might be that you need to generate for a value for all variables 1->n,
-#       but lecturer never replied to email so idk
+# Must have a value in the assignment for exactly every variable in the clause set
+#   - Cannot have a value for a variable not in the clause set, even if that variable
+#      is in the range [1, n]
 TEST_REQUIRE_FULL_SATISFYING_ASSIGNMENT = True
-# Considers a full satisfying assignment to contain all variables from 1->n,
-#   instead of *exactly* all variables in the clause set 
-TEST_FULL_SATISFYING_IS_RANGE = False
 
 ## TEST ON FLY VARIABLES
 # Requires:
@@ -240,16 +240,10 @@ def read_dimacs():
     return cases[1:]
 
 def test_assignment_validity(clause_set, result):
-    # TODO: if function provided, we could ensure the assignment provided
-    #   does satisfy the clause set
     if TEST_REQUIRE_FULL_SATISFYING_ASSIGNMENT:
         variables = None
-        if not TEST_FULL_SATISFYING_IS_RANGE:
-            # Get all variables from clause set
-            variables = list({abs(literal) for clause in clause_set for literal in clause})
-        else:
-            # Generate all variables in range 1->n where n is the largest variable in clause set
-            variables = list(range(1, max((abs(literal) for clause in clause_set for literal in clause)) + 1))
+        # Get all variables from clause set
+        variables = list({abs(literal) for clause in clause_set for literal in clause})
 
         # Should be unnecessary, but testing code doesn't need to be fast
         variables.sort()
@@ -258,6 +252,11 @@ def test_assignment_validity(clause_set, result):
 
         if variables != result_variables:
             print(f"Warning: partial assignment instead of full assignment: assignment {result_variables} doesn't match variables {variables}")                
+
+    if IMPLEMENTATION_WORKING_SATISFIABILITY_CHECK is not None:
+        for clause in clause_set:
+            if not IMPLEMENTATION_WORKING_SATISFIABILITY_CHECK(clause, result):
+                print(f"Warning: {result} may not be a satisfying assignment, failed clause {clause}")
 
 def test_case(case : Case):
     result, elapsed = execute_sat_solver(case.clause_set, IMPLEMENTATION_TEST_SAT_SOLVER)
