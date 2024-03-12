@@ -8,7 +8,7 @@ from inspect import signature
 # Importing implementation from a folder called "secret"
 import sys
 sys.path.append("secret/")
-import two_literals as two_literals
+import pre_cdcl as two_literals
 import implementation as primary
 
 ### Set options here
@@ -26,11 +26,15 @@ CLAUSE_GENERATION_ATTEMPT_LIMIT = 100
 NO_MISSING_VARIABLES = False
 # Ensures generator never generates empty clause
 ALLOW_EMPTY_CLAUSES = True
+# Chance for a literal to be repeated (once) in the same clause, can be set to 0
+REPEAT_LITERALS_IN_CLAUSE_WEIGHT = 0.05
+# 50% chance for a REPEATED literal to generate with opposite polarity
+REPEAT_LITERALS_OPPOSITE_POLARITY = 0.5
 
 ## GENERATE VARIABLES
 
 # The filename to save the test cases to
-GENERATE_FILENAME = "tests/5_big_cases.txt"
+GENERATE_FILENAME = "tests/medium_cases.txt"
 # Seed for generation
 #   - Might be best to set this to a constant for speed comparisons with testing on the fly
 # GENERATE_SEED = time.time()
@@ -51,7 +55,7 @@ IMPLEMENTATION_WORKING_SAT_SOLVER = two_literals.simple_sat_solve
 ## TEST VARIABLES
 
 # The filename to read the test cases from
-TEST_FILENAME = "tests/1k_less_vars_less_clauses.txt"
+TEST_FILENAME = "tests/8queens.txt"
 # The filename to write results of failed tests to
 TEST_RESULT_FILENAME = "tests/results.txt"
 # The implementation of your SAT solver you want to test
@@ -120,11 +124,23 @@ def write_cases(cases, filename) -> None:
             f.write(convert_to_dimacs(case))
 
 def generate_clause() -> list[int]:
-    return [
+    generated_clause = [
         (i + 1) * (random.randint(0, 1) * 2 - 1)
         for i in range(random.randint(*GENERATE_VARIABLE_INTERVAL))
         if random.random() < LITERAL_PRESENCE_WEIGHT
     ]
+
+    if REPEAT_LITERALS_IN_CLAUSE_WEIGHT > 0:
+        repeat_extension = []
+
+        for literal in generated_clause:
+            if random.random() < REPEAT_LITERALS_IN_CLAUSE_WEIGHT:
+                repeat_extension.append(
+                    literal * (-1 if random.random() < REPEAT_LITERALS_OPPOSITE_POLARITY else 1))
+                
+        generated_clause.extend(repeat_extension)
+
+    return generated_clause
 
 def execute_sat_solver(clause_set, solver):
     if solver is None:

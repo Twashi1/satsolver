@@ -35,6 +35,7 @@ Clauses must be terminated with a `0`, and can stretch over multiple lines (alth
 
 ### Inaccuracies/Subtleties
 
-- Can generate duplicate terms
+- Can generate duplicate clauses
+- (Optional) Can generate duplicate literals in the same clause (and of opposite polarity)
 - (Optional) Can generate empty clauses
 - (Optional) Can generate with missing variables in range $[1, n]$ where $n$ is maximum variable
